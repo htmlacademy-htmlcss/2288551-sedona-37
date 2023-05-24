@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header data-test="header" class="main-header">
+        <nav>
+        <a class="logo">
+            <img src="../../assets/img/icons/logo.svg" alt="logo city of sedona" width="140" height="70">
+        </a>
+        <ul class="site-navigation">
+            <li class="site-navigation-item">
+                <a href="#">Главная</a>
+            </li>
+            <li   li class="site-navigation-item">
+                <a href="#">О седоне</a>
+            </li>
+            <li class="site-navigation-item">
+                <a href="#">Гостиницы</a>
+            </li>
+        </ul>
+        <form action="#" method="POST">
+            <img src="../../assets/img/icons/search.svg" alt="search" width="20" height="20">
+            <input type="search" placeholder="Поиск:" hidden>
+            <!-- это попап?? -->
+        </form>
+        <button claas="like-button" type="button">
+            <img src="../../assets/img/icons/heart.svg" alt="put a like" width="20" height="20">
+        </button>
+        <button type="button" onclick="document.location=''">Хочу сюда!</button>
+        <!--это ссылка на попап -->
+        </nav>
+    </header>
+    <main data-test="main">
+        <section data-test=" filter">
+            <h1>Гостиницы Седоны</h1>
+            <div>
+                <img src="../../assets/img/icons/home-page.svg" alt="link on home page" width="13" height="15">
+                <img src="../../assets/img/icons/breadcrumbs.svg"
+                alt="the arrow shows you are on the hotel page" width="6.39" height="9.94">
+                <span>Гостиницы</span>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <p>
+                        <input type="checkbox" name="usability" id="pool" value="pool">
+                        <label for="pool">Бассейн</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="usability" id="parking" value="parking">
+                        <label for="parking">Парковка</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="usability" id="wi-fi" value="wi-fi">
+                        <label for="wi-fi">Wi-Fi</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <p>
+                        <input type="radio" name="hotel" id="hotel" value="hotel">
+                        <label for="">Гостиница</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="motel" id="motel" value="motel">
+                        <label for="">Мотель</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="apartments" id="apartments" value="apartments">
+                        <label for="">Апартаменты</label>
+                    </p>
+                </fieldset>
+            </form>
+            <p>Стоимость,<span>₽</span>:</p>
+        </section>
+        <section data-test="catalog">...</section>
+        <section data-test="subscribe">...</section>
+    </main>
+    <footer data-test="footer" class="main-footer">
+        <ul class="social-list">
+            <li class="social-item">
+                <a href="#">
+                    <img src="../../assets/img/icons/vk.svg" alt="our vk page" width="" height="">
+                </a>
+            </li>
+            <li class="social-item">
+                <a href="#">
+                    <img src="../../assets/img/icons/telegram.svg" alt="our telegram" width="" height="">
+                </a>
+            </li>
+            <li class="social-item">
+            <a href="#">
+                <img src="../../assets/img/icons/youtube.svg" alt="your youtube channel" width="" height="">
+                </a>
+            </li>
+        </ul>
+        <p>+7 (812) 812-12-12</p>
+        <a href="#">
+            <img src="../../assets/img/icons/logo-htmlacademy.svg" alt="html academy website" width="" height="">
+        </a>
+    </footer>
+</body>
+</html>
