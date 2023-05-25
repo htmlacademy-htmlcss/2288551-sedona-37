@@ -14,31 +14,39 @@
         <a class="logo">
           <img src="../img/icons/logo.svg" alt="logo city of sedona" width="140" height="70">
         </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item">
+        <ul class="navigation">
+          <li class="navigation-item">
             <a href="#">Главная</a>
           </li>
-          <li class="site-navigation-item">
+          <li class="navigation-item">
             <a href="#">О седоне</a>
           </li>
-          <li class="site-navigation-item">
+          <li class="navigation-item">
             <a href="#">Гостиницы</a>
           </li>
         </ul>
-        <form action="#" method="POST">
-          <img src="../img/icons/search.svg" alt="search" width="20" height="20">
-          <input type="search" placeholder="Поиск:" hidden>
-          <!-- это попап?? -->
-        </form>
-        <button claas="like-button" type="button">
-          <img src="../img/icons/heart.svg" alt="put a like" width="20" height="20">
-        </button>
-        <button type="button" onclick="document.location=''">Хочу сюда!</button>
-        <!--ссылка на попап -->
+        <ul class="nav-buttons">
+          <li class="nav-button">
+            <button class="search-button">
+              <img src="../img/icons/search.svg" alt="search" width="20" height="20">
+            </button>
+          </li>
+          <li class="nav-button">
+            <button claas="like-button" type="button">
+              <img src="../img/icons/heart.svg" alt="put a like" width="20" height="20">
+            </button>
+          </li>
+          <li class="nav-button">
+            <button type="button" onclick="document.location='#'">Хочу сюда!</button>
+            <!--это ссылка на попап -->
+          </li>
+        </ul>
       </nav>
     </header>
     <main data-test="main">
       <section data-test="hero" class="hero">
+        <h1 class="visually-hidden">sedona</h1>
+        <!-- hidden h1, write for screenreaders -->
         <img src="../img/icons/welcome.svg" alt="welcom to the gorgeous sedona,
         because the grand canyon sucks">
         <img src="../img/images/divider.png" alt="divider">
@@ -52,7 +60,7 @@
             <div class="advantages-separator"></div>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div class="advantage-item">
+          <div class="advantage-item img-advantage">
             <img src="../img/images/true-city.jpg" alt="city photo">
           </div>
           <div class="advantage-item">
@@ -70,7 +78,7 @@
             <div class="advantages-separator"></div>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
-          <div class="advantage-item">
+          <div class="advantage-item img-advantage">
             <img src="../img/images/devil-bridge.jpg" alt="canyon photo">
           </div>
           <div class="advantage-item">
@@ -80,20 +88,20 @@
           </div>
         <h2 class="slogan-name">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
-        <ul class="recommend-list">
-          <li class="recommend-item">
+        <ul class="advantage-list">
+          <li class="advantage-item">
             <img src="../img/icons/home.svg" alt="house" width="75" height="72">
             <h3 class="recommend-h3">Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле,
               всё как в кино!</p>
           </li>
-          <li class="recommend-item">
+          <li class="advantage-item">
             <img src="../img/icons/food.svg" alt="burger" width="75" height="72">
             <h3 class="recommend-h3">Еда</h3>
             <p>Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="recommend-item">
+          <li class="advantage-item">
             <img src="../img/icons/souvenir.svg" alt="present" width="75" height="72">
             <h3 class="recommend-h3">Сувениры</h3>
             <p>Не только китайского,
@@ -105,13 +113,13 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" onclick="document.location=''">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button type="button" onclick="document.location='#'">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         <!-- ссылка на попап а не стр -->
       </section>
       <section data-test="subscribe" class="subscription">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="" method="">
+        <form action="" method="post">
           <input type="email" name="email" id="email" placeholder="Ваш e-mail">
           <input type="submit" value="Подписаться">
         </form>
@@ -120,23 +128,25 @@
     <footer class="main-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
-          <a href="#">
+          <a href="https://vk.com/htmlacademy">
             <img src="../img/icons/vk.svg" alt="our vk page" width="" height="">
           </a>
         </li>
         <li class="social-item">
-          <a href="#">
+          <a href="https://t.me/htmlacademy">
             <img src="../img/icons/telegram.svg" alt="our telegram" width="" height="">
           </a>
         </li>
         <li class="social-item">
-          <a href="#">
+          <a href="https://www.youtube.com/user/htmlacademyru">
             <img src="../img/icons/youtube.svg" alt="your youtube channel" width="" height="">
           </a>
         </li>
       </ul>
-      <p>+7 (812) 812-12-12</p>
-      <a href="#">
+      <span class=”phone”>
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </span>
+      <a href=" https://htmlacademy.ru/">
         <img src="../img/icons/logo-htmlacademy.svg" alt="html academy website" width="" height="">
       </a>
     </footer>
