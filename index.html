@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial.scale=1.0">
-    <link rel="stylesheet" href="main-style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header data-test="header" class="main-header">
+    <header class="main-header">
       <nav>
         <a href="index.html" class="logo">
           <img src="img/icons/logo.svg" alt="logo city of sedona" width="140" height="70">
@@ -45,8 +45,8 @@
         </ul>
       </nav>
     </header>
-    <main data-test="main">
-      <section data-test="hero" class="hero">
+    <main class="main">
+      <section class="hero">
         <h1 class="visually-hidden">sedona</h1>
         <!-- hidden h1, write for screenreaders -->
         <img src="img/icons/welcome.svg" alt="welcom to the gorgeous sedona,
@@ -56,14 +56,14 @@
           заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section data-test="advantages" class="advantages" id="advantages">
+      <section class="advantages" id="advantages">
           <div class="advantage-item">
             <h3 class="advantages-h3">Настоящий городок</h3>
             <div class="advantages-separator"></div>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="advantage-item img-advantage">
-            <img src="img/images/true-city.jpg" alt="city photo">
+            <img src="img/images/true-city.jpg" alt="city photo" width="800" height="385">
           </div>
           <div class="advantage-item">
             <h3 class="advantages-h3">Небольшая площадь</h3>
@@ -81,7 +81,7 @@
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
           <div class="advantage-item img-advantage">
-            <img src="img/images/devil-bridge.jpg" alt="canyon photo">
+            <img src="img/images/devil-bridge.jpg" alt="canyon photo" width="800" height="385">
           </div>
           <div class="advantage-item">
             <h3 class="advantages-h3">Там есть мост дьявола</h3>
@@ -111,16 +111,16 @@
           </li>
         </ul>
       </section>
-      <section data-test="search" class="hotel-search">
+      <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" onclick="document.location='#'">
+        <a href="#">
           ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-        </button>
+        </a>
         <!-- ссылка на попап а не стр -->
       </section>
-      <section data-test="subscribe" class="subscription">
+      <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
@@ -129,21 +129,21 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer" data-test="footer">
+    <footer class="footer">
       <ul class="social-list">
         <li class="social-item">
           <a href="https://vk.com/htmlacademy">
-            <img src="img/icons/vk.svg" alt="vk page">
+            <img src="img/icons/vk.svg" alt="vk page" width="24" height="14">
           </a>
         </li>
         <li class="social-item">
           <a href="https://t.me/htmlacademy">
-            <img src="img/icons/telegram.svg" alt="telegram">
+            <img src="img/icons/telegram.svg" alt="telegram" width="18" height="16">
           </a>
         </li>
         <li class="social-item">
           <a href="https://www.youtube.com/user/htmlacademyru">
-            <img src="img/icons/youtube.svg" alt="youtube channel">
+            <img src="img/icons/youtube.svg" alt="youtube channel" width="22" height="17">
           </a>
         </li>
       </ul>
@@ -151,7 +151,7 @@
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </span>
       <a href=" https://htmlacademy.ru/">
-        <img src="img/icons/logo-htmlacademy.svg" alt="html academy website">
+        <img src="img/icons/logo-htmlacademy.svg" alt="html academy website" width="115" height="33">
       </a>
     </footer>
   </body>
