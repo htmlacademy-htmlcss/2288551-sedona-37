@@ -59,7 +59,7 @@
                 <span>Гостиницы</span>
             </div>
             <form class="form" action="https://echo.htmlacademy.ru/" method="get" >
-                <fieldset>
+                <fieldset class="filter-form">
                     <legend>
                         <h4>Инфраструктура:</h4>
                     </legend>
@@ -76,7 +76,7 @@
                         <label for="wi-fi">Wi-Fi</label>
                     </p>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-form">
                     <legend>
                         <h4>Тип жилья:</h4>
                     </legend>
@@ -93,7 +93,7 @@
                         <label for="apartments">Апартаменты</label>
                     </p>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-form">
                     <legend>Стоимость,<span>₽</span>:</legend>
                     <label>
                         <input type="number" min="0" max="15000" name="min-price" value="0">
@@ -109,13 +109,15 @@
                 <button class="reset">Сбросить</button>
             </form>
         </section>
-        <section data-test="catalog">
-            <h2>Найдено гостиниц: 38</h2>
-            <select name="sorting" id="sorting">
-                <option value="cheap">Сначала дешевые</option>
-                <option value="costly">Сначала дорогие</option>
-                <option value="rating">По рейтингу</option>
-            </select>
+        <section class="catalog">
+            <div class="catalog-sorting">
+                <h2>Найдено гостиниц: 38</h2>
+                <select name="sorting" id="sorting">
+                    <option value="cheap">Сначала дешевые</option>
+                    <option value="costly">Сначала дорогие</option>
+                    <option value="rating">По рейтингу</option>
+                </select>
+            </div>
             <ul class="layout-list">
                 <li class="layout-item">
                     <button type="button" class="layout" aria-label="layout grid">
@@ -224,6 +226,7 @@
                     </div>
                 </li>
             </ul>
+            <div class="light-line"></div>
             <ul class="pagination">
                 <li class="pagination-item">
                     <a class="pagination-link pagination-current" href="#">1</a>
@@ -247,10 +250,10 @@
         </section>
         <section class="subscribe">
             <h2>Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form action="https://echo.htmlacademy.ru/" method="post">
-                <input type="email" name="email" id="email" placeholder="Ваш e-mail">
-                <input type="submit" name="submit" value="Подписаться">
+            <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="email-subscribe" type="email" name="email" id="email" placeholder="Ваш e-mail">
+                <input class="button-subscribe" type="submit" name="submit" value="Подписаться">
             </form>
         </section>
     </main>
