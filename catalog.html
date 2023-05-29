@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/common-style.css">
+    <link rel="stylesheet" href="styles/catalog.css">
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/favicon.png">
     <title>HTML Academy: Седона</title>
 </head>
 <body>
     <header class="main-header">
-        <nav>
+        <nav class="all-navigation">
             <a href="index.html" class="logo">
                 <img src="img/icons/logo.svg" alt="logo city of sedona" width="140" height="70">
             </a>
@@ -20,7 +21,7 @@
                     <a href="index.html">Главная</a>
                 </li>
                 <li class="navigation-item">
-                    <a href="index.html/#advanteges">О седоне</a>
+                    <a href="index.html/#advanteges">О Седоне</a>
                 </li>
                 <li class="navigation-item current-link">
                     <a href="#">Гостиницы</a>
@@ -38,7 +39,7 @@
                     </button>
                 </li>
                 <li class="nav-button">
-                    <button type="button" onclick="document.location='#'">
+                    <button class="want-there" type="button" onclick="document.location='#'">
                         Хочу сюда!
                     </button>
                     <!--это ссылка на попап -->
@@ -57,9 +58,11 @@
                 alt="the arrow shows you are on the hotel page" width="6" height="10">
                 <span>Гостиницы</span>
             </div>
-            <form action="https://echo.htmlacademy.ru/" method="get">
+            <form class="form" action="https://echo.htmlacademy.ru/" method="get" >
                 <fieldset>
-                    <legend>Инфраструктура:</legend>
+                    <legend>
+                        <h4>Инфраструктура:</h4>
+                    </legend>
                     <p>
                         <input type="checkbox" name="pool" id="pool" checked>
                         <label for="pool">Бассейн</label>
@@ -74,7 +77,9 @@
                     </p>
                 </fieldset>
                 <fieldset>
-                    <legend>Тип жилья:</legend>
+                    <legend>
+                        <h4>Тип жилья:</h4>
+                    </legend>
                     <p>
                         <input type="radio" name="house-type" id="hotel" value="hotel" checked>
                         <label for="hotel">Гостиница</label>
@@ -249,7 +254,7 @@
             </form>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="footer">
         <ul class="social-list">
             <li class="social-item">
                 <a href="https://vk.com/htmlacademy">
@@ -267,10 +272,10 @@
                 </a>
             </li>
         </ul>
-        <span class=”phone”>
+        <span class="phone">
             <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         </span>
-        <a href=" https://htmlacademy.ru/">
+        <a class="htmlacademy-logo" href=" https://htmlacademy.ru/">
             <img src="img/icons/logo-htmlacademy.svg" alt="html academy website" width="115" height="33">
         </a>
     </footer>

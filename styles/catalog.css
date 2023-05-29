@@ -1,0 +1,16 @@
+.filter {
+    background-image: url("../img/images/catalog-filter.jpg");
+    width: 1060px;
+    height: 307px;
+    padding: 35px 70px 70px 70px;
+    color: #FFFFFF;
+}
+.filter h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.form {
+    display: flex;
+}
