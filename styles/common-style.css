@@ -202,6 +202,10 @@ body {
     padding: 10px 14.67px;
 }
 
+.social-item:hover {
+    fill:#E5E5E5;
+}
+
 .phone a{
     margin: 0 230px;
     text-decoration: none;
