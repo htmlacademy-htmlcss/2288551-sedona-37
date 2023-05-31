@@ -2,15 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial.scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial.scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/common-style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="img/favicon/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="main-header">
-      <nav>
+      <nav class="all-navigation">
         <a href="index.html" class="logo">
           <img src="img/icons/logo.svg" alt="logo city of sedona" width="140" height="70">
         </a>
@@ -19,7 +22,7 @@
             <a href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="#advantages">О седоне</a>
+            <a href="#advantages">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a href="catalog.html">Гостиницы</a>
@@ -37,7 +40,7 @@
             </button>
           </li>
           <li class="nav-button">
-            <button type="button" onclick="document.location='#'">
+            <button class="want-there" type="button" onclick="document.location='#'">
               Хочу сюда!
             </button>
             <!--это ссылка на попап -->
@@ -49,12 +52,14 @@
       <section class="hero">
         <h1 class="visually-hidden">sedona</h1>
         <!-- hidden h1, write for screenreaders -->
-        <img src="img/icons/welcome.svg" alt="welcom to the gorgeous sedona,
+        <img class="welcome-img" src="img/icons/welcome.svg" alt="welcom to the gorgeous sedona,
         because the grand canyon sucks">
-        <img src="img/images/divider.png" alt="divider">
-        <h2 class="about-sedona">Седона — небольшой городок в Аризоне,
-          заслуживающий большего!</h2>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <img class="divider" src="img/images/divider.png" alt="divider">
+        <div class="about-sedona">
+          <h2>Седона — небольшой городок в Аризоне,<br>
+            заслуживающий большего!</h2>
+          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
       </section>
       <section class="advantages" id="advantages">
           <div class="advantage-item">
@@ -113,7 +118,7 @@
       </section>
       <section class="hotel-search">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,
+        <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#">
           ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
@@ -122,10 +127,10 @@
       </section>
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="email" id="email" placeholder="Ваш e-mail">
-          <input type="submit" value="Подписаться">
+        <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="email-subscribe" type="email" name="email" id="email" placeholder="Ваш e-mail">
+          <input class="button-subscribe" type="submit" value="Подписаться">
         </form>
       </section>
     </main>
@@ -147,10 +152,10 @@
           </a>
         </li>
       </ul>
-      <span class=”phone”>
+      <span class="phone">
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </span>
-      <a href=" https://htmlacademy.ru/">
+      <a class="htmlacademy-logo" href=" https://htmlacademy.ru/">
         <img src="img/icons/logo-htmlacademy.svg" alt="html academy website" width="115" height="33">
       </a>
     </footer>

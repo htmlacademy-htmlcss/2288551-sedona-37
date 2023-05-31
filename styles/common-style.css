@@ -1,0 +1,220 @@
+
+/* here ara header, footer, subscribe section */
+
+/* header */
+@font-face {
+    font-family: 'PT sans';
+    font-weight: 400;
+    src: url('fonts/ptsans-400.woff2') format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PT sans';
+    font-weight: 700;
+    src: url('fonts/ptsans-700.woff2') format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #F2F2F2;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.all-navigation {
+    display: flex;
+    align-content: center;
+    width: 1060px;
+    height: 65px;
+    padding: 0 70px;
+    background-color: #FFFFFF;
+}
+
+.navigation, .nav-buttons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+}
+
+.navigation-item {
+    padding: 0 16px;
+}
+
+.logo {
+    margin-right: 30px;
+    padding: 0;
+}
+
+.current-link a {
+    border-bottom: 2px solid #756257;
+    padding-bottom: 20px;
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid #756257;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.nav-buttons {
+    width: 268px;
+    margin-left: 284px;
+}
+.search-button, .like-button {
+    width: 44px;
+    height: 34px;
+    border: #FFFFFF;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.search-button:hover, .like-button:hover{
+    opacity: 0.7;
+}
+
+.search-button:active, .like-button:active {
+    opacity: 0.5;
+}
+
+.want-there {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 160px;
+    height: 36px;
+    border-radius: 4px;
+    border: none;
+    background-color: #756157;
+    cursor: pointer;
+}
+
+.want-there:focus, .want-there:hover {
+    background-color: #615048;
+}
+
+.want-there:active {
+    color: #FFFFFF4D;
+}
+
+.want-there:disabled {
+    background: #E5E5E5;
+}
+
+/* subscribe section */
+
+.subscribe {
+    width: 684px;
+    height: 214.86px;
+    margin: 0 auto;
+}
+.subscribe h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color:#FFFFFF;
+}
+
+.subscribe p {
+    color:#FFFFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 54px;
+}
+
+.subscribe-form {
+    display: flex;
+
+}
+
+.email-subscribe {
+    background-color: #F2F2F2;
+    border-radius: 4px 0 0 4px;
+    width: 452px;
+    height: 50px;
+    border: none;
+}
+
+.button-subscribe {
+    background-color: #82B3D3;
+    border-radius: 0 4px 4px 0;
+    border: #82B3D3;
+    width: 232px;
+    height: 52px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color:#FFFFFF;
+}
+
+/* footer */
+.footer {
+    background-color: #FFFFFF;
+    display: flex;
+    width: 1060px;
+    height: 50px;
+    padding: 0 70px;
+}
+.social-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    align-items: center;
+}
+
+.social-item img{
+    display: flex;
+    padding: 10px 14.67px;
+}
+
+.social-item:hover {
+    fill:#E5E5E5;
+}
+
+.phone a{
+    margin: 0 230px;
+    text-decoration: none;
+    color:#000;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.htmlacademy-logo {
+    margin: 8.5px 0;
+}
