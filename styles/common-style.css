@@ -18,15 +18,19 @@
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    clip-path: inset(100%);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 1.2em;
     color: #333333;
     background-color: #F2F2F2;
     width: 1200px;
@@ -36,7 +40,7 @@ body {
 .all-navigation {
     display: flex;
     align-content: center;
-    width: 1060px;
+    width: 1200px;
     height: 65px;
     padding: 0 70px;
     background-color: #FFFFFF;
@@ -55,7 +59,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2em;
     color: #000;
 }
 
@@ -102,12 +106,10 @@ body {
 .want-there {
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-left: 20px;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin: 14px 0  14px 20px;
     width: 160px;
     height: 36px;
     border-radius: 4px;
@@ -140,7 +142,7 @@ body {
     text-align: center;
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 1.2em;
     color:#FFFFFF;
 }
 
@@ -148,8 +150,6 @@ body {
     color:#FFFFFF;
     text-align: center;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
     margin-bottom: 54px;
 }
 
@@ -177,7 +177,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    line-height: 36px;
+    line-height: 2em;
     color:#FFFFFF;
 }
 
@@ -197,7 +197,7 @@ body {
     align-items: center;
 }
 
-.social-item img{
+.social-item svg{
     display: flex;
     padding: 10px 14.67px;
 }
@@ -212,7 +212,7 @@ body {
     color:#000;
     font-weight: 400;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 1em;
 }
 
 .htmlacademy-logo {

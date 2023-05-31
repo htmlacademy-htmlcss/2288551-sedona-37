@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common-style.css">
     <link rel="stylesheet" href="styles/catalog.css">
     <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
@@ -50,7 +50,7 @@
     </header>
     <main class="main">
         <section class="filter">
-            <h1>Гостиницы Седоны</h1>
+            <h1 class="filter-h1">Гостиницы Седоны</h1>
             <div>
                 <a href="index.html">
                     <img src="img/icons/home-page.svg" alt="link on home page" width="13" height="15">
@@ -106,13 +106,13 @@
                     </label>
                         <input type="range" min="0" max="15000" step="1">
                 </fieldset>
-                <button class="apply">Применить</button>
-                <button class="reset">Сбросить</button>
+                <button class="apply" type="submit">Применить</button>
+                <button class="reset" type="reset">Сбросить</button>
             </form>
         </section>
         <section class="catalog">
             <div class="catalog-sorting">
-                <h2>Найдено гостиниц: 38</h2>
+                <h2 class="catalog-h2">Найдено гостиниц: 38</h2>
                 <select name="sorting" id="sorting">
                     <option value="cheap">Сначала дешевые</option>
                     <option value="costly">Сначала дорогие</option>
@@ -140,7 +140,7 @@
                 <li class="hotel-item">
                     <img src="img/images/AmaraResort-Spa.jpg" alt="Amara Resort & Spa">
                     <a href="#" class="about-hotel">
-                        <h3>Amara Resort & Spa</h3>
+                        <h3 class="hotel-item-h3">Amara Resort & Spa</h3>
                     </a>
                     <p class="name-and-price">
                         <span>Гостиница</span>
@@ -163,7 +163,7 @@
                 <li class="hotel-item">
                     <img src="img/images/VillasAtPocoDiablo.jpg" alt="Villas at Poco Diablo">
                     <a href="#" class="about-hotel">
-                        <h3>Villas at Poco Diablo</h3>
+                        <h3 class="hotel-item-h3">Villas at Poco Diablo</h3>
                     </a>
                     <p class="name-and-price">
                         <span>Гостиница</span>
@@ -186,7 +186,7 @@
                 <li class="hotel-item">
                     <img src="img/images/DesertQuailInn.jpg" alt="Desert Quail Inn">
                     <a href="#" class="about-hotel">
-                        <h3>Desert Quail Inn</h3>
+                        <h3 class="hotel-item-h3">Desert Quail Inn</h3>
                     </a>
                     <p class="name-and-price">
                         <span>Гостиница</span>
@@ -208,7 +208,7 @@
                 <li class="hotel-item">
                     <img src="img/images/GreenTreeInn.jpg" alt="GreenTree Inn">
                     <a href="#" class="about-hotel">
-                        <h3>GreenTree Inn</h3>
+                        <h3 class="hotel-item-h3">GreenTree Inn</h3>
                     </a>
                     <p class="name-and-price">
                         <span>Гостиница</span>
@@ -250,7 +250,7 @@
             </ul>
         </section>
         <section class="subscribe">
-            <h2>Подпишитесь на рассылку</h2>
+            <h2 class="subscribe-h2">Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <input class="email-subscribe" type="email" name="email" id="email" placeholder="Ваш e-mail">
@@ -262,24 +262,37 @@
         <ul class="social-list">
             <li class="social-item">
                 <a href="https://vk.com/htmlacademy">
-                    <img src="img/icons/vk.svg" alt="vk page" width="24" height="14">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none">
+                        <path fill="#83B3D3" fill-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1
+                        .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5
+                        0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8
+                        0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4
+                        0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6
+                        0-1 0 0 3.2-4.5 3.5-6Z" clip-rule="evenodd"/>
+                    </svg>
                 </a>
             </li>
             <li class="social-item">
                 <a href="https://t.me/htmlacademy">
-                    <img src="img/icons/telegram.svg" alt="telegram" width="18" height="16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+                        <path fill="#83B3D3" d="M16.8 1 .8 7c-1 .4-1 1-.2 1.3l4.1 1.3 9.5-6c.5-.3.9-.1.5.2l-7.6
+                        7-.3 4.1c.4 0 .6-.2.8-.4l2-2 4.1 3.1c.8.5 1.3.3 1.5-.7L18 2.2c.3-1-.4-1.6-1.1-1.2Z"/>
+                    </svg>
                 </a>
             </li>
             <li class="social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru">
-                <img src="img/icons/youtube.svg" alt="youtube channel" width="22" height="17">
+                <a href="https://www.youtube.com/user/htmlacademyru">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
+                        <path fill="#83B3D3" d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6
+                        0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z"/>
+                    </svg>
                 </a>
             </li>
         </ul>
         <span class="phone">
             <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         </span>
-        <a class="htmlacademy-logo" href=" https://htmlacademy.ru/">
+        <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
             <img src="img/icons/logo-htmlacademy.svg" alt="html academy website" width="115" height="33">
         </a>
     </footer>
