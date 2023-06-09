@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 /* here ara header, footer, subscribe section */
 
@@ -20,10 +23,6 @@
 .visually-hidden {
     position: absolute;
     clip-path: inset(100%);
-}
-
-* {
-    box-sizing: border-box;
 }
 
 body {
@@ -134,28 +133,26 @@ body {
 
 .subscribe {
     width: 684px;
-    height: 214.86px;
-    margin: 0 auto;
+    height: 215px;
+    padding: 96px 258px 104px;
 }
-.subscribe h2 {
+.subscribe-h2 {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     font-size: 30px;
     line-height: 1.2em;
-    color:#FFFFFF;
 }
 
 .subscribe p {
+    margin: 20px auto 54px;
     color:#FFFFFF;
     text-align: center;
     font-weight: 400;
-    margin-bottom: 54px;
 }
 
 .subscribe-form {
     display: flex;
-
 }
 
 .email-subscribe {
@@ -171,7 +168,7 @@ body {
     border-radius: 0 4px 4px 0;
     border: #82B3D3;
     width: 232px;
-    height: 52px;
+    height: 50px;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
@@ -184,10 +181,6 @@ body {
 /* footer */
 .footer {
     background-color: #FFFFFF;
-    display: flex;
-    width: 1060px;
-    height: 50px;
-    padding: 0 70px;
 }
 .social-list {
     display: flex;
@@ -195,11 +188,6 @@ body {
     padding: 0;
     margin: 5px 0;
     align-items: center;
-}
-
-.social-item svg{
-    display: flex;
-    padding: 10px 14.67px;
 }
 
 .social-item:hover {

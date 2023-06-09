@@ -64,3 +64,17 @@
     color: #000;
     background-color: #F2F2F2;
 }
+
+.subscribe {
+    width: 1200px;
+    height: 414.86px;
+    background-color: #FFFFFF;
+}
+
+.subscribe-h2 {
+    color:#000;
+}
+
+.subscribe p {
+    color: #333;
+}
