@@ -1,7 +1,3 @@
-.main {
-    background-color: #FFFFFF;
-}
-
 .filter {
     background-image: url("../img/images/catalog-filter.jpg");
     width: 1060px;
@@ -13,7 +9,7 @@
 .filter h1 {
     font-weight: 700;
     font-size: 60px;
-    line-height: 78px;
+    line-height: 1.3em;
 }
 
 .form {
@@ -37,7 +33,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 1.2em;
 }
 
 .layout-list, .hotels-list, .pagination {
@@ -63,4 +59,17 @@
 .pagination-current {
     color: #000;
     background-color: #F2F2F2;
+}
+
+.subscribe {
+    width: 1200px;
+    height: 414.86px;
+}
+
+.subscribe-h2 {
+    color:#000;
+}
+
+.subscribe p {
+    color: #333;
 }
