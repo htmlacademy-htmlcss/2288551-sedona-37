@@ -1,7 +1,3 @@
-.main {
-    background-color: #FFFFFF;
-}
-
 .filter {
     background-image: url("../img/images/catalog-filter.jpg");
     width: 1060px;
@@ -68,7 +64,6 @@
 .subscribe {
     width: 1200px;
     height: 414.86px;
-    background-color: #FFFFFF;
 }
 
 .subscribe-h2 {

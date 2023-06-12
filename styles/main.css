@@ -91,9 +91,10 @@
     width: 60px;
 }
 
-.advantages-separator:first-child,
-.advantages-separator:nth-child(7) {
+.advantages-separator-light {
     border-bottom: 2px solid #FFFFFF4D;
+    width: 60px;
+    margin: 30px auto;
 }
 
 .slogan-name {
@@ -107,7 +108,6 @@
 
 .slogan {
     padding: 64px 347px;
-    background-color: #FFFFFF;
     text-align: center;
 }
 
@@ -149,7 +149,6 @@
 
 .hotel-search {
     text-align: center;
-    background-color: #FFFFFF;
     padding: 96px 304px;
 }
 
