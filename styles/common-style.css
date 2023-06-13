@@ -178,7 +178,7 @@ body {
 .button-subscribe {
     background-color: #82B3D3;
     border-radius: 0 4px 4px 0;
-    border: #82B3D3;
+    border: none;
     width: 232px;
     height: 50px;
     align-items: center;
@@ -190,7 +190,23 @@ body {
     color:#FFFFFF;
 }
 
+.button-subscribe:hover {
+    background-color: #68A2CA;
+    cursor: pointer;
+}
+
+.button-subscribe:active {
+    color: #FFFFFF4D;
+    background-color: #82B3D3;
+    cursor: pointer;
+}
+
 /* footer */
+.footer {
+    display: flex;
+    padding: 40px 70px 30px;
+}
+
 .social-list {
     display: flex;
     list-style: none;
@@ -199,19 +215,41 @@ body {
     align-items: center;
 }
 
-.social-item:hover {
-    fill:#E5E5E5;
+.social-item {
+    padding: 12px 15px;
+}
+
+path:hover {
+    fill: #68A2CA;
+}
+
+path:active {
+    fill: #68A2CA4D;
 }
 
 .phone a{
-    margin: 0 230px;
+    margin: 0 195px;
     text-decoration: none;
     color:#000;
     font-weight: 400;
     font-size: 40px;
     line-height: 1em;
+    width: 331px;
+    height: 40px;
 }
 
-.htmlacademy-logo {
+.phone a:hover {
+    color: #756157;
+}
+
+.phone a:active {
+    color: #7561574D;
+}
+
+a.htmlacademy-logo {
     margin: 8.5px 0;
+}
+
+.htmlacademy-logo:hover {
+    fill: #756157;
 }
