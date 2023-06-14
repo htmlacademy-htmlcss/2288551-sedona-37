@@ -12,21 +12,28 @@ html {
 @font-face {
     font-family: 'PT sans';
     font-weight: 400;
-    src: url('fonts/ptsans-400.woff2') format("woff2");
+    src: url('../fonts/ptsans-400.woff2') format("woff2");
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'PT sans';
     font-weight: 700;
-    src: url('fonts/ptsans-700.woff2') format("woff2");
+    src: url('../fonts/ptsans-700.woff2') format("woff2");
     font-style: normal;
     font-display: swap;
 }
 
+/* visually-hidden for different browsers, don't delete properties */
 .visually-hidden {
     position: absolute;
-    clip-path: inset(100%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 body {
@@ -48,13 +55,16 @@ body {
 .page-container{
     background-color: #FFFFFF;
 }
+.main-header {
+    align-content: center;
+    padding: 0 70px;
+    height: 64px;
+}
 
 .all-navigation {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
-    width: 1200px;
-    height: 65px;
-    padding: 0 70px;
 }
 
 .navigation, .nav-buttons {
@@ -62,16 +72,21 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    align-items: center;
 }
 
-.navigation-item a {
+ul.navigation {
+    margin-right: 284px;
+}
+
+.navigation-link {
+    display: block;
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2em;
     color: #000;
+    padding: 20px 0;
 }
 
 .navigation-item {
@@ -83,27 +98,29 @@ body {
     padding: 0;
 }
 
-.current-link a {
+.current-link a{
     border-bottom: 2px solid #756257;
-    padding-bottom: 20px;
 }
 
-.navigation a:hover {
+.navigation-link:hover {
     border-bottom: 2px solid #756257;
-    padding-bottom: 20px;
-    cursor: pointer;
 }
 
 .nav-buttons {
+    display: flex;
+    align-items: center;
     width: 268px;
-    margin-left: 284px;
+    height: 64px;
 }
 .search-button, .like-button {
-    width: 44px;
-    height: 34px;
+    padding: 21px 12px;
     border: #FFFFFF;
     background-color: #FFFFFF;
     cursor: pointer;
+}
+
+.like-button {
+    margin-right: 20px;
 }
 
 .search-button:hover, .like-button:hover{
@@ -120,7 +137,7 @@ body {
     line-height: 1.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 14px 0  14px 20px;
+    padding: 0;
     width: 160px;
     height: 36px;
     border-radius: 4px;
@@ -149,6 +166,8 @@ body {
     padding: 96px 258px 104px;
 }
 .subscribe-h2 {
+    margin: 0;
+    margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
@@ -157,7 +176,7 @@ body {
 }
 
 .subscribe p {
-    margin: 20px auto 54px;
+    margin: 0 auto 54px;
     color:#FFFFFF;
     text-align: center;
     font-weight: 400;
@@ -178,7 +197,7 @@ body {
 .button-subscribe {
     background-color: #82B3D3;
     border-radius: 0 4px 4px 0;
-    border: #82B3D3;
+    border: none;
     width: 232px;
     height: 50px;
     align-items: center;
@@ -190,28 +209,80 @@ body {
     color:#FFFFFF;
 }
 
+.button-subscribe:hover {
+    background-color: #68A2CA;
+    cursor: pointer;
+}
+
+.button-subscribe:active {
+    color: #FFFFFF4D;
+    background-color: #82B3D3;
+    cursor: pointer;
+}
+
 /* footer */
+.footer {
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    width: 1060px;
+    height: 50px;
+    margin: 40px 70px 30px;
+}
+
 .social-list {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 5px 0;
+    margin-right: 237px;
     align-items: center;
 }
 
-.social-item:hover {
-    fill:#E5E5E5;
+.social-item {
+    padding: 12px 12px;
+}
+
+path:hover {
+    fill: #68A2CA;
+}
+
+path:active {
+    fill: #68A2CA4D;
 }
 
 .phone a{
-    margin: 0 230px;
     text-decoration: none;
+    font-style: normal;
     color:#000;
     font-weight: 400;
     font-size: 40px;
     line-height: 1em;
+    width: 331px;
+    height: 40px;
 }
 
-.htmlacademy-logo {
-    margin: 8.5px 0;
+.phone {
+    text-align: center;
+    width: 331px;
+    height: 40px;
+    margin-right: 235px;
+}
+
+.phone a:hover {
+    color: #756157;
+}
+
+.phone a:active {
+    color: #7561574D;
+}
+
+a.htmlacademy-logo {
+    margin: 9px 0;
+}
+
+.htmlacademy-logo:hover {
+    fill: #756157;
 }

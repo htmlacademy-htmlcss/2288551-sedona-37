@@ -46,6 +46,7 @@
 
 .advantages-h3 {
     margin: 0;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -53,6 +54,7 @@
 }
 
 .advantage-item p {
+    margin: 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -94,7 +96,7 @@
 .advantages-separator-light {
     border-bottom: 2px solid #FFFFFF4D;
     width: 60px;
-    margin: 30px auto;
+    margin: 0 auto 30px;
 }
 
 .slogan-name {
@@ -124,12 +126,20 @@
     margin: 0;
 }
 
+.advantage-list img {
+    margin-bottom: 27px;
+}
+
+.advantage-list-item p {
+    margin: 0;
+}
+
 .recommend-h3 {
+    margin: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -153,7 +163,7 @@
 }
 
 .hotel-search p {
-    margin: 20px auto 54px;
+    margin: 0 auto 54px;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -162,6 +172,7 @@
 
 .hotel-search-h2 {
     margin: 0;
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
