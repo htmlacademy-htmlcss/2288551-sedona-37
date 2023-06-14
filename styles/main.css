@@ -39,12 +39,12 @@
     margin-bottom: 25px;
 }
 
-.advantages {
+.advantage {
     display: flex;
     flex-wrap: wrap;
 }
 
-.advantages-h3 {
+.advantage-h3 {
     margin: 0;
     margin-bottom: 30px;
     font-weight: 700;
@@ -80,20 +80,20 @@
     background-color: #83B3D333;
 }
 
-.img-advantage {
+.advantage-img {
     width: 800px;
     height: 385px;
     padding: 0;
     margin: 0;
 }
 
-.advantages-separator {
+.advantage-separator {
     margin: 30px auto;
     border-bottom: 2px solid #0000004D;
     width: 60px;
 }
 
-.advantages-separator-light {
+.advantage-separator-light {
     border-bottom: 2px solid #FFFFFF4D;
     width: 60px;
     margin: 0 auto 30px;
