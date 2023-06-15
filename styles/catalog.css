@@ -237,9 +237,18 @@ select {
 }
 
 .hotel-item {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: 256px 21px 36px 37px;
+    row-gap: 16px;
     padding: 19px;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
+}
+
+.hotel-about {
+    display: grid;
+    grid-column: 1/3;
 }
 
 .hotel-item a {
@@ -252,7 +261,6 @@ select {
 
 .hotel-item-h3 {
     margin: 0;
-    margin-bottom: 16px;
     color: #000;
     font-style: normal;
     font-weight: 700;
@@ -268,9 +276,8 @@ select {
     opacity: 0.6;
 }
 
-.name-and-price {
-    display: flex;
-    justify-content: space-between;
+.price-name,
+.price-value {
     margin: 0;
     margin-bottom: 16px;
     font-style: normal;
@@ -283,6 +290,7 @@ select {
 .button-more,
 .button-favorite,
 .button-favorite-choose {
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -339,18 +347,7 @@ select {
     color: #FFFFFF4D;
 }
 
-.more-and-like {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
-}
-
-.stars-and-rank {
-    display: flex;
-    justify-content: space-between;
-}
-
-.stars-and-rank p {
+.rank {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -361,11 +358,6 @@ select {
     border-radius: 4px;
     padding: 9px 22px 8px;
     margin: 0;
-}
-
-.stars-and-rank img {
-    margin: 0;
-
 }
 
 .light-line {
