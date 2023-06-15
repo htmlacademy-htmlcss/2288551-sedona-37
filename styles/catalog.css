@@ -238,8 +238,9 @@ select {
 
 .hotel-item {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 140px);
     grid-template-rows: 256px 21px 36px 37px;
+    column-gap: 20px;
     row-gap: 16px;
     padding: 19px;
     border: 1px solid #E6E6E6;
@@ -279,13 +280,17 @@ select {
 .price-name,
 .price-value {
     margin: 0;
-    margin-bottom: 16px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
 }
+
+.price-value {
+    text-align: end;
+}
+
 
 .button-more,
 .button-favorite,
@@ -324,6 +329,7 @@ select {
 .button-favorite:hover,
 .button-favorite:focus {
     background-color: #68A2CA;
+    cursor: pointer;
 }
 
 .button-favorite:active {
@@ -340,6 +346,7 @@ select {
 .button-favorite-choose:hover,
 .button-favorite-choose:focus {
     background-color: #6C9E42;
+    cursor: pointer;
 }
 
 .button-favorite-choose:active {
@@ -368,6 +375,7 @@ select {
 
 .pagination {
     margin: 0;
+    margin-bottom: 60px;
     padding: 0;
 }
 
