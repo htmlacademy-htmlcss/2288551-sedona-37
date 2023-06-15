@@ -89,7 +89,7 @@ ul.navigation {
     font-size: 20px;
     line-height: 1.2em;
     color: #000;
-    padding: 20px 0;
+    padding: 19px 0;
 }
 
 .navigation-item {
@@ -101,12 +101,17 @@ ul.navigation {
     padding: 0;
 }
 
-.current-link a{
+.current-link {
     border-bottom: 2px solid #756257;
 }
 
-.navigation-link:hover {
+.navigation-link:hover:not(.current-link) {
+    color: #000000AD;
     border-bottom: 2px solid #756257;
+}
+
+.navigation-link:active:not(.current-link) {
+    color: #0000008D;
 }
 
 .nav-buttons {
@@ -116,7 +121,7 @@ ul.navigation {
     height: 64px;
 }
 .search-button, .like-button {
-    padding: 21px 12px;
+    padding: 20px 12px;
     border: #FFFFFF;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -135,14 +140,13 @@ ul.navigation {
 }
 
 .brown-button {
+    font-family: 'PT Sans';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 0;
-    width: 160px;
-    height: 36px;
+    padding: 8px 34px;
     border-radius: 4px;
     border: none;
     background-color: #756157;
@@ -190,6 +194,7 @@ ul.navigation {
 }
 
 .subscribe-email {
+    font-family: 'PT Sans';
     background-color: #F2F2F2;
     border-radius: 4px 0 0 4px;
     width: 452px;
@@ -202,18 +207,21 @@ ul.navigation {
     line-height: 24px;
 }
 
+.subscribe-email:hover,
+.subscribe-email:focus {
+    background-color: #E6E6E6;;
+}
+
 .button-subscribe {
     background-color: #82B3D3;
     border-radius: 0 4px 4px 0;
     border: none;
-    width: 232px;
-    height: 50px;
-    align-items: center;
-    text-align: center;
+    padding: 8px 50px;
+    font-family: 'PT Sans';
+    font-style: normal;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    line-height: 2em;
     color:#FFFFFF;
 }
 
@@ -226,6 +234,13 @@ ul.navigation {
     color: #FFFFFF4D;
     background-color: #82B3D3;
     cursor: pointer;
+}
+
+.subscribe-email:active,
+.subscribe-email:hover,
+.subscribe-email:focus {
+    outline: 0;
+    outline-offset: 0;
 }
 
 /* FOOTER */
@@ -254,11 +269,11 @@ ul.navigation {
     padding: 12px 12px;
 }
 
-path:hover {
+.social-item path:hover {
     fill: #68A2CA;
 }
 
-path:active {
+.social-item path:active {
     fill: #68A2CA4D;
 }
 
@@ -287,11 +302,14 @@ path:active {
 .phone a:active {
     color: #7561574D;
 }
-
-a.htmlacademy-logo {
-    margin: 9px 0;
+.htmlacademy {
+    padding: 9px 0;
 }
 
-.htmlacademy-logo:hover {
+.htmlacademy:hover path{
     fill: #756157;
+}
+
+.htmlacademy:active path{
+    fill: #7561574D;
 }
