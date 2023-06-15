@@ -28,19 +28,19 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="nav-buttons">
-            <li class="nav-button">
-              <button class="search-button" aria-label="поиск">
+          <ul class="button-nav-list">
+            <li class="button-nav-item">
+              <button class="button-search" aria-label="поиск">
                 <img src="img/icons/search.svg" alt="search" width="20" height="20">
               </button>
             </li>
-            <li class="nav-button">
-              <button class="like-button" type="button" aria-label="лайк">
+            <li class="button-nav-item">
+              <button class="button-like" type="button" aria-label="лайк">
                 <img src="img/icons/heart.svg" alt="put a like" width="20" height="20">
               </button>
             </li>
-            <li class="nav-button">
-              <button class="brown-button" type="button" onclick="document.location='#'">
+            <li class="button-nav-item">
+              <button class="button-want button-brown" type="button" onclick="document.location='#'">
                 Хочу сюда!
               </button>
               <!--это ссылка на попап -->
@@ -122,7 +122,7 @@
           <h2 class="hotel-search-h2">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#">
+          <a class="button-brown" href="#">
             ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
           </a>
           <!-- ссылка на попап а не стр -->
@@ -131,8 +131,9 @@
           <h2 class="subscribe-h2">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="email">Ваш e-mail</label>
             <input class="subscribe-email" type="email" name="email" id="email" placeholder="Ваш e-mail">
-            <button class="button-subscribe" type="submit">Подписаться</button>
+            <button class="button-subscribe button-blue" type="submit">Подписаться</button>
           </form>
         </section>
       </main>

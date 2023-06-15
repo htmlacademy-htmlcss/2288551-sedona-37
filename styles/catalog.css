@@ -14,7 +14,6 @@
 }
 
 .filter h1 {
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 1.3em;
@@ -64,7 +63,6 @@
 
 .filter-form-name {
     margin: 0;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -77,7 +75,7 @@ legend {
 }
 
 .filter-form label {
-    font-style: normal;
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -112,13 +110,12 @@ input[type="radio"] {
 
 .apply,
 .reset {
+    font-family: inherit;
     background: none;
     border: none;
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -126,6 +123,7 @@ input[type="radio"] {
 
 .reset {
     padding: 8px 57px;
+    color: #FFFFFF;
 }
 
 .reset:hover {
@@ -146,15 +144,6 @@ input[type="radio"] {
     margin-bottom: 32px;
     background: #82B3D3;
     border-radius: 4px;
-}
-
-.apply:hover, .apply:focus {
-    background-color: #68A2CA;
-}
-
-.apply:active {
-    color: #FFFFFF4D;
-    background-color: #82B3D3;
 }
 
 .catalog {
@@ -182,7 +171,8 @@ input[type="radio"] {
     margin-right: 200px;
 }
 
-select {
+.sorting {
+    font-family: inherit;
     width: 292px;
     height: 49px;
     border: 2px solid #E5E5E5;
@@ -253,6 +243,7 @@ select {
 }
 
 .hotel-item a {
+    font-family: inherit;
     text-decoration: none;
 }
 
@@ -288,15 +279,14 @@ select {
 }
 
 .price-value {
-    text-align: end;
+    justify-self: end;
 }
 
 
 .button-more,
 .button-favorite,
 .button-favorite-choose {
-    font-family: 'PT Sans';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -310,31 +300,10 @@ select {
     background-color: #756157;
 }
 
-.button-more:hover,
-.button-more:focus {
-    background-color: #615048;
-}
-
-.button-more:active {
-    background: #756157;
-    color: #FFFFFF4D;
-}
-
 .button-favorite {
     border: none;
     padding: 8px 15px;
     background-color: #82B3D3;
-}
-
-.button-favorite:hover,
-.button-favorite:focus {
-    background-color: #68A2CA;
-    cursor: pointer;
-}
-
-.button-favorite:active {
-    background-color: #82B3D3;
-    color: #FFFFFF4D;
 }
 
 .button-favorite-choose {
@@ -355,7 +324,6 @@ select {
 }
 
 .rank {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -387,22 +355,11 @@ select {
     background-color: #82B3D3;
     border-radius: 4px;
     text-align: center;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     margin-right: 8px;
     cursor: pointer;
-}
-
-.pagination-link:hover:not(.pagination-current, .pagination-etc),
-.pagination-link:focus:not(.pagination-current, .pagination-etc) {
-    background-color: #68A2CA;
-}
-
-.pagination-link:active:not(.pagination-current, .pagination-etc) {
-    background-color: #82B3D3;
-    color: #FFFFFF4D;
 }
 
 .pagination-item:last-child {
