@@ -1,0 +1,399 @@
+.filter {
+    background-image: url("../img/images/catalog-filter.jpg");
+    height: 412px;
+    padding: 35px 70px 70px 70px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.filter-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.filter h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.3em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.filter-home-page,
+.filter-hotel-link {
+    text-decoration: none;
+}
+
+.filter-hotel-link {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.filter-hotel-link:hover {
+    color: #FFFFFF99;
+}
+
+.filter-hotel-link:active {
+    color: #FFFFFF4D;
+}
+
+.form {
+    display: flex;
+}
+
+.filter-form {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-form p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.filter-form p:last-child {
+    margin: 0;
+}
+
+.filter-form-name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding-bottom: 32px;
+}
+
+legend {
+    padding: 0;
+}
+
+.filter-form label {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+.filter-form:first-child {
+    margin-right: 70px;
+}
+
+.filter-form:nth-child(2) {
+    margin-right: 140px;
+    width: 150px;
+}
+
+.filter-form:nth-child(3) {
+    margin-right: 70px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0;
+}
+
+.slider {
+    display: block;
+}
+
+.filter-buttons {
+    display: block;
+}
+
+.apply,
+.reset {
+    font-family: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.reset {
+    padding: 8px 57px;
+    color: #FFFFFF;
+}
+
+.reset:hover {
+    color: #ffffff8D;
+}
+
+.reset:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.reset:active {
+    color: #FFFFFF4D;
+}
+
+.apply {
+    padding: 8px 50px;
+    margin-bottom: 32px;
+    background: #82B3D3;
+    border-radius: 4px;
+}
+
+.catalog {
+    padding: 0 70px;
+}
+
+.catalog-head {
+    display: flex;
+    width: 1060px;
+    height: 49px;
+    margin-bottom: 40px;
+}
+
+.catalog-sorting {
+    display: flex;
+    align-items: center;
+}
+
+.catalog h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2em;
+    margin: 0;
+    margin-right: 200px;
+}
+
+.sorting {
+    font-family: inherit;
+    width: 292px;
+    height: 49px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.layout-list,
+.hotels-list,
+.pagination {
+    display: flex;
+    list-style: none;
+}
+
+.layout-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 70px;
+    align-items: center;
+    gap: 8px;
+}
+
+.layout {
+    background: none;
+    padding: 14px 14px;
+    cursor: pointer;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.current-layout,
+.layout:hover,
+.layout:active {
+    border-color: #000000;
+}
+
+.layout:focus {
+    border-color: #68A2CA;
+}
+
+.hotels-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.hotel-item {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: minmax(256px, min-content) 21px minmax(36px, min-content) 37px;
+    column-gap: 20px;
+    row-gap: 16px;
+    padding: 19px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+}
+
+.hotel-about {
+    display: grid;
+    grid-column: 1/3;
+}
+
+.hotel-item a {
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.hotel-item img {
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.hotel-item-h3 {
+    margin: 0;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.hotel-about:hover, .hotel-item-h3:hover {
+    opacity: 0.8;
+}
+
+.hotel-about:active, .hotel-item-h3:active {
+    opacity: 0.6;
+}
+
+.price-name,
+.price-value {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.price-value {
+    justify-self: end;
+}
+
+
+.button-more,
+.button-favorite,
+.button-favorite-choose {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.button-more {
+    padding: 8px 26px;
+    background-color: #756157;
+}
+
+.button-favorite {
+    border: none;
+    padding: 8px 15px;
+    background-color: #82B3D3;
+}
+
+.button-favorite-choose {
+    border: none;
+    padding: 8px 14px;
+    background-color: #7DB54F;
+}
+
+.button-favorite-choose:hover,
+.button-favorite-choose:focus {
+    background-color: #6C9E42;
+    cursor: pointer;
+}
+
+.button-favorite-choose:active {
+    background-color: #7DB54F;
+    color: #FFFFFF4D;
+}
+
+.rank {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+    background: #F2F2F2;
+    border-radius: 4px;
+    padding: 9px 22px 8px;
+    margin: 0;
+}
+
+.light-line {
+    border: 1px solid #E6E6E6;
+    transform: rotate(180deg);
+    margin-bottom: 40px;
+}
+
+.pagination {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.pagination-link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 12px 0;
+    background-color: #82B3D3;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.pagination-item:last-child {
+    margin-right: 0;
+}
+
+.pagination-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.pagination-current {
+    background-color: #F2F2F2;
+}
+
+.pagination-current,
+.pagination-etc {
+    color: #000;
+}
+
+.pagination-etc {
+    background-color: #FFFFFF;
+}
+
+.subscribe {
+    width: 1200px;
+    height: 414.86px;
+}
+
+.subscribe-h2 {
+    color: #000;
+}
+
+.subscribe p {
+    color: #333;
+}
