@@ -81,6 +81,7 @@
 }
 
 .advantage-img {
+    object-fit: cover;
     width: 800px;
     height: 385px;
     padding: 0;

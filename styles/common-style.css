@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -16,6 +18,7 @@ html {
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'PT sans';
     font-weight: 700;
@@ -76,7 +79,8 @@ body {
     align-content: center;
 }
 
-.navigation, .button-nav-list {
+.navigation,
+.button-nav-list {
     list-style: none;
     display: flex;
     margin: 0;
@@ -105,6 +109,7 @@ ul.navigation {
 .logo {
     margin-right: 30px;
     padding: 0;
+    z-index: 1;
 }
 
 .current-link {
@@ -126,7 +131,9 @@ ul.navigation {
     width: 268px;
     height: 64px;
 }
-.button-search, .button-like {
+
+.button-search,
+.button-like {
     padding: 21px 12px;
     border: #FFFFFF;
     background-color: #FFFFFF;
@@ -137,12 +144,29 @@ ul.navigation {
     margin-right: 20px;
 }
 
-.button-search:hover, .button-like:hover{
+.button-search:hover,
+.button-like:hover {
     opacity: 0.7;
 }
 
-.button-search:active, .button-like:active {
+.button-search:active,
+.button-like:active {
     opacity: 0.5;
+}
+
+.like-number {
+    position: absolute;
+    background: #7DB54F;
+    border-radius: 10px;
+    margin: 11px 0 0 20px;
+    padding: 5px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .button-want {
@@ -163,6 +187,7 @@ ul.navigation {
     height: 215px;
     padding: 96px 258px 104px;
 }
+
 .subscribe-h2 {
     margin: 0;
     margin-bottom: 20px;
@@ -175,7 +200,7 @@ ul.navigation {
 
 .subscribe p {
     margin: 0 auto 54px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     text-align: center;
     font-weight: 400;
 }
@@ -199,7 +224,8 @@ ul.navigation {
 
 .subscribe-email:hover,
 .subscribe-email:focus {
-    background-color: #E6E6E6;;
+    background-color: #E6E6E6;
+    ;
 }
 
 .button-subscribe {
@@ -242,6 +268,7 @@ ul.navigation {
 }
 
 .social-item {
+    display: inline-block;
     padding: 12px 12px;
 }
 
@@ -253,10 +280,10 @@ ul.navigation {
     fill: #68A2CA4D;
 }
 
-.phone a{
+.phone a {
     text-decoration: none;
     font-style: normal;
-    color:#000;
+    color: #000;
     font-weight: 400;
     font-size: 40px;
     line-height: 1em;
@@ -278,15 +305,16 @@ ul.navigation {
 .phone a:active {
     color: #7561574D;
 }
+
 .htmlacademy {
     padding: 9px 0;
 }
 
-.htmlacademy:hover path{
+.htmlacademy:hover path {
     fill: #756157;
 }
 
-.htmlacademy:active path{
+.htmlacademy:active path {
     fill: #7561574D;
 }
 
@@ -296,11 +324,12 @@ ul.navigation {
 /* BROWN BUTTON */
 .button-brown {
     background-color: #756157;
-    color:#FFFFFF;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
-.button-brown:focus, .button-brown:hover {
+.button-brown:focus,
+.button-brown:hover {
     background-color: #615048;
 }
 
@@ -316,7 +345,7 @@ ul.navigation {
 /* BLUE BUTTON */
 .button-blue {
     background-color: #82B3D3;
-    color:#FFFFFF;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
