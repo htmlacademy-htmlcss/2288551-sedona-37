@@ -12,35 +12,38 @@
   </head>
   <body>
     <section class="page-container">
+
+      <!-- HEADER -->
       <header class="main-header">
         <nav class="all-navigation">
           <a href="index.html" class="logo">
             <img src="img/icons/logo.svg" alt="logo city of sedona" width="140" height="70">
           </a>
           <ul class="navigation">
-            <li class="navigation-item current-link">
-              <a class="navigation-link" href="#">Главная</a>
+            <li class="navigation-item">
+              <a class="navigation-link current-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#advantages">О Седоне</a>
+              <a class="navigation-link" href="#advantage">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="nav-buttons">
-            <li class="nav-button">
-              <button class="search-button" aria-label="поиск">
+          <ul class="button-nav-list">
+            <li class="button-nav-item">
+              <button class="button-search" aria-label="поиск по сайту">
                 <img src="img/icons/search.svg" alt="search" width="20" height="20">
               </button>
             </li>
-            <li class="nav-button">
-              <button class="like-button" type="button" aria-label="лайк">
+            <li class="button-nav-item">
+              <span class="like-number">12</span>
+              <button class="button-like" type="button" aria-label="лайк">
                 <img src="img/icons/heart.svg" alt="put a like" width="20" height="20">
               </button>
             </li>
-            <li class="nav-button">
-              <button class="want-there" type="button" onclick="document.location='#'">
+            <li class="button-nav-item">
+              <button class="button-want button-brown" type="button" onclick="document.location='#'">
                 Хочу сюда!
               </button>
               <!--это ссылка на попап -->
@@ -48,7 +51,10 @@
           </ul>
         </nav>
       </header>
+
       <main class="main">
+
+        <!-- HERO -->
         <section class="hero">
           <h1 class="visually-hidden">sedona</h1>
           <!-- hidden h1, write for screenreaders -->
@@ -61,36 +67,38 @@
             <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
         </section>
-        <section class="advantages" id="advantages">
+
+        <!-- ADVANTAGE -->
+        <section class="advantage" id="advantage">
           <div class="advantage-item">
-            <h3 class="advantages-h3">Настоящий городок</h3>
-            <div class="advantages-separator-light"></div>
+            <h3 class="advantage-h3">Настоящий городок</h3>
+            <div class="advantage-separator-light"></div>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div class="advantage-item img-advantage">
-            <img src="img/images/true-city.jpg" alt="дом среди цветов" width="800" height="385">
+          <div class="advantage-item advantage-img">
+            <img src="img/images/true-city.jpg" alt="дом среди цветов">
           </div>
           <div class="advantage-item">
-            <h3 class="advantages-h3">Небольшая площадь</h3>
-            <div class="advantages-separator"></div>
+            <h3 class="advantage-h3">Небольшая площадь</h3>
+            <div class="advantage-separator"></div>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="advantage-item">
-            <h3 class="advantages-h3">Красивая<br /> дорога</h3>
-            <div class="advantages-separator"></div>
+            <h3 class="advantage-h3">Красивая<br /> дорога</h3>
+            <div class="advantage-separator"></div>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="advantage-item">
-            <h3 class="advantages-h3">Мало<br /> туристов</h3>
-            <div class="advantages-separator"></div>
+            <h3 class="advantage-h3">Мало<br /> туристов</h3>
+            <div class="advantage-separator"></div>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
-          <div class="advantage-item img-advantage">
-            <img src="img/images/devil-bridge.jpg" alt="рыжие горы" width="800" height="385">
+          <div class="advantage-item advantage-img">
+            <img src="img/images/devil-bridge.jpg" alt="рыжие горы">
           </div>
           <div class="advantage-item">
-            <h3 class="advantages-h3">Там есть<br /> мост дьявола</h3>
-            <div class="advantages-separator-light"></div>
+            <h3 class="advantage-h3">Там есть<br /> мост дьявола</h3>
+            <div class="advantage-separator-light"></div>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
           <div class="slogan">
@@ -118,24 +126,31 @@
             </li>
           </ul>
         </section>
+
+        <!-- HOTEL SEARCH -->
         <section class="hotel-search">
           <h2 class="hotel-search-h2">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#">
+          <a class="button-brown" href="#">
             ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
           </a>
           <!-- ссылка на попап а не стр -->
         </section>
+
+        <!-- SUBSCRIBE -->
         <section class="subscribe">
           <h2 class="subscribe-h2">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email-subscribe" type="email" name="email" id="email" placeholder="Ваш e-mail">
-            <button class="button-subscribe" type="submit">Подписаться</button>
+            <label class="visually-hidden" for="email">Ваш e-mail</label>
+            <input class="subscribe-email" type="email" name="email" id="email" placeholder="Ваш e-mail">
+            <button class="button-subscribe button-blue" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
+
+      <!-- FOOTER -->
       <footer class="footer">
         <div class="footer-container">
           <ul class="social-list">
@@ -174,10 +189,10 @@
           <span class="phone">
             <a href="tel:+78128121212">+7 (812) 812-12-12</a>
           </span>
-          <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
+          <a class="htmlacademy" href="https://htmlacademy.ru/">
             <span class="visually-hidden">html academy</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none">
-              <path fill="#000" class="htmlacademy-logo" d="M0 13.3v2.6h2.5v-2.6H0ZM11.6 4.9c-1.6 0-2.8.7-3.6 1.7h-.1V.4h-2v15.5h2v-5.3C7.9
+              <path fill="#000" d="M0 13.3v2.6h2.5v-2.6H0ZM11.6 4.9c-1.6 0-2.8.7-3.6 1.7h-.1V.4h-2v15.5h2v-5.3C7.9
               8.5 9.2 7 11.2 7c1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.8c.1-3-1.8-5-4.5-5ZM26.6 5.2h-4.8V1.5h-2v3.8h-1.9v2h1.9v6c0
               1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.2h4.8v-2ZM41.1 5c-1.6 0-2.9.8-3.5 2h-.1a3.7 3.7 0 0
               0-3.4-2c-1.4 0-2.5.8-3.1 1.8h-.1V5.2H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4
