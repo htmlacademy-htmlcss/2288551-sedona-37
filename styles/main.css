@@ -174,7 +174,6 @@
 .hotel-search-h2 {
     margin: 0;
     margin-bottom: 20px;
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -184,7 +183,6 @@
 
 .hotel-search a {
     font-family: 'PT Sans';
-    font-style: normal;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;

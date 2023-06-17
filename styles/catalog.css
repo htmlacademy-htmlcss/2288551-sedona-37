@@ -177,7 +177,6 @@ input[type="radio"] {
     height: 49px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -272,7 +271,6 @@ input[type="radio"] {
 .price-name,
 .price-value {
     margin: 0;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -311,6 +309,7 @@ input[type="radio"] {
     border: none;
     padding: 8px 14px;
     background-color: #7DB54F;
+    transition: background-color 0.3s;
 }
 
 .button-favorite-choose:hover,
