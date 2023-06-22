@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,9 @@
         <link rel="alternate icon" type="image/png" href="img/favicon/favicon.png">
         <title>HTML Academy: Седона</title>
     </head>
+
     <body>
-        <section class="page-container">
+        <div class="page-container">
 
             <!-- HEADER -->
             <header class="main-header">
@@ -31,18 +33,18 @@
                         </li>
                     </ul>
                     <ul class="button-nav-list">
-                        <li class="button-nav-item">
+                        <li>
                             <button class="button-search" aria-label="поиск">
                                 <img src="img/icons/search.svg" alt="search" width="20" height="20">
                             </button>
                         </li>
-                        <li class="button-nav-item">
+                        <li>
                             <span class="like-number">12</span>
                             <button class="button-like" type="button" aria-label="лайк">
                                 <img src="img/icons/heart.svg" alt="put a like" width="20" height="20">
                             </button>
                         </li>
-                        <li class="button-nav-item">
+                        <li>
                             <button class="button-want button-brown" type="button" onclick="document.location='#'">
                                 Хочу сюда!
                             </button>
@@ -57,13 +59,12 @@
 
                 <!-- FILTERS -->
                 <section class="filter">
-                    <h1 class="filter-h1">Гостиницы Седоны</h1>
+                    <h1>Гостиницы Седоны</h1>
                     <div class="filter-links">
                         <a class="filter-home-page" href="index.html">
                             <img src="img/icons/home-page.svg" alt="ссылка на домашнюю страницу" width="13" height="15">
                         </a>
-                        <img src="img/icons/breadcrumbs.svg" alt="стрелка показывает на" width="6"
-                            height="10">
+                        <img src="img/icons/breadcrumbs.svg" alt="стрелка показывает на" width="6" height="10">
                         <a href="#" class="filter-hotel-link">Гостиницы</a>
                     </div>
                     <form class="form" action="https://echo.htmlacademy.ru/" method="get">
@@ -105,11 +106,11 @@
                             <legend>
                                 <h4 class="filter-form-name">Стоимость, ₽:</h4>
                             </legend>
-                            <label>
+                            <label class="price-form price-form-one">
                                 <input type="number" min="0" max="15000" name="min-price" value="0">
                                 от
                             </label>
-                            <label>
+                            <label class="price-form price-form-two">
                                 <input type="number" min="0" max="15000" name="max-price" value="9000">
                                 до
                             </label>
@@ -126,27 +127,38 @@
                 <section class="catalog">
                     <div class="catalog-head">
                         <div class="catalog-sorting">
-                            <h2 class="catalog-h2">Найдено гостиниц: 38</h2>
-                            <select class="sorting" name="sorting" id="sorting">
-                                <option value="cheap">Сначала дешевые</option>
-                                <option value="costly">Сначала дорогие</option>
-                                <option value="rating">По рейтингу</option>
-                            </select>
+                            <h2>Найдено гостиниц: 38</h2>
+                            <div class="sorting-container">
+                                <select class="select-control" aria-label="Сортировка">
+                                    <option value="cheap">
+                                        Сначала дешевые
+                                    </option>
+                                    <option value="costly">
+                                        Сначала дорогие
+                                    </option>
+                                    <option value="rating">
+                                        По рейтингу
+                                    </option>
+                                </select>
+                            </div>
                         </div>
                         <ul class="layout-list">
-                            <li class="layout-item">
+                            <li>
                                 <button type="button" class="layout current-layout" aria-label="layout grid">
-                                    <img src="img/icons/grid-mode.svg" alt="раскладка карточками" width="16" height="14">
+                                    <img src="img/icons/grid-mode.svg" alt="раскладка карточками" width="16"
+                                        height="14">
                                 </button>
                             </li>
-                            <li class="layout-item">
+                            <li>
                                 <button type="button" class="layout" aria-label="layout picture then description">
-                                    <img src="img/icons/caption-mode.svg" alt="раскладка картинка снизу подпись" width="16" height="14">
+                                    <img src="img/icons/caption-mode.svg" alt="раскладка картинка снизу подпись"
+                                        width="16" height="14">
                                 </button>
                             </li>
-                            <li class="layout-item">
+                            <li>
                                 <button type="button" class="layout" aria-label="list">
-                                    <img src="img/icons/list-mode.svg" alt="раскладка картинка справа подпись" width="16" height="14">
+                                    <img src="img/icons/list-mode.svg" alt="раскладка картинка справа подпись"
+                                        width="16" height="14">
                                 </button>
                             </li>
                         </ul>
@@ -157,12 +169,12 @@
                                 <img src="img/images/AmaraResort-Spa.jpg" alt="Amara Resort & Spa">
                                 <h3 class="hotel-item-h3">Amara Resort & Spa</h3>
                             </a>
-                                <span class="price-name">Гостиница</span>
-                                <span class="price-value">От 4000 ₽</span>
-                                <a class="button-more button-brown" href="#">подробнее</a>
-                                <button class="button-favorite button-blue" type="button">в избранное</button>
-                                <img src="img/icons/fourStars.svg" alt="4 звезды">
-                                <p class="rank">Рейтинг: <span>8,5</span></p>
+                            <span class="price-name">Гостиница</span>
+                            <span class="price-value">От 4000 ₽</span>
+                            <a class="button-more button-brown" href="#">подробнее</a>
+                            <button class="button-favorite button-blue" type="button">в избранное</button>
+                            <img src="img/icons/fourStars.svg" alt="4 звезды">
+                            <p class="rank">Рейтинг: <span>8,5</span></p>
                         </li>
                         <li class="hotel-item">
                             <a href="#" class="hotel-about">
@@ -243,7 +255,8 @@
                         <li class="social-item">
                             <span class="visually-hidden">вконтакте</span>
                             <a href="https://vk.com/htmlacademy">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="25"
+                                    height="15" viewBox="0 0 25 15" fill="none">
                                     <path fill="#83B3D3" fill-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1
                             .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5
                             0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8
@@ -256,7 +269,8 @@
                         <li class="social-item">
                             <span class="visually-hidden">телеграм</span>
                             <a href="https://t.me/htmlacademy">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18"
+                                    height="17" viewBox="0 0 18 17" fill="none">
                                     <path fill="#83B3D3" d="M16.8 1 .8 7c-1 .4-1 1-.2 1.3l4.1 1.3 9.5-6c.5-.3.9-.1.5.2l-7.6
                             7-.3 4.1c.4 0 .6-.2.8-.4l2-2 4.1 3.1c.8.5 1.3.3 1.5-.7L18 2.2c.3-1-.4-1.6-1.1-1.2Z" />
                                 </svg>
@@ -265,7 +279,8 @@
                         <li class="social-item">
                             <span class="visually-hidden">ютуб</span>
                             <a href="https://www.youtube.com/user/htmlacademyru">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23"
+                                    height="18" viewBox="0 0 23 18" fill="none">
                                     <path fill="#83B3D3" d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6
                             0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z" />
                                 </svg>
@@ -277,7 +292,8 @@
                     </span>
                     <a class="htmlacademy" href="https://htmlacademy.ru/">
                         <span class="visually-hidden">html academy</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115"
+                            height="34" viewBox="0 0 115 34" fill="none">
                             <path fill="#000" d="M0 13.3v2.6h2.5v-2.6H0ZM11.6 4.9c-1.6 0-2.8.7-3.6 1.7h-.1V.4h-2v15.5h2v-5.3C7.9
                             8.5 9.2 7 11.2 7c1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.8c.1-3-1.8-5-4.5-5ZM26.6 5.2h-4.8V1.5h-2v3.8h-1.9v2h1.9v6c0
                             1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.2h4.8v-2ZM41.1 5c-1.6 0-2.9.8-3.5 2h-.1a3.7 3.7 0 0
@@ -292,11 +308,12 @@
                             5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-3h8.8c.2-3.5-2-6.2-5.5-6.2Zm0 1.9c1.7 0 3
                             1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 18.3a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5
                             0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.4l-3.6-9h-2.2l4.8 11.7c-.3.9-.7 1.2-1.7
-                            1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+                            1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
                         </svg>
                     </a>
                 </div>
             </footer>
-        </section>
+        </div>
     </body>
+
 </html>

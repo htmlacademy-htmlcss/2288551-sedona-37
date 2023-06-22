@@ -1,22 +1,32 @@
+
+
 .hero {
     background: url("../img/images/main-page-background.jpg");
     padding-top: 51px;
 }
 
 .welcome-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     margin-bottom: 25px;
 }
 
 .divider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .about-sedona {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -40,8 +50,11 @@
 }
 
 .advantage {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .advantage-h3 {
@@ -120,8 +133,11 @@
 }
 
 .advantage-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -174,7 +190,6 @@
 .hotel-search-h2 {
     margin: 0;
     margin-bottom: 20px;
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -184,7 +199,6 @@
 
 .hotel-search a {
     font-family: 'PT Sans';
-    font-style: normal;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
