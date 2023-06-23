@@ -580,7 +580,7 @@ ul.navigation {
     height: 48px;
 }
 
-.button-number ~ .button-number-path:hover {
+.button-number:hover svg{
     fill: #000000;
 }
 

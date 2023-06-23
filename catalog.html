@@ -110,18 +110,30 @@
                         </fieldset>
                         <fieldset class="filter-form">
                             <legend>
-                                <h4 class="filter-form-name">Стоимость, ₽:</h4>
+                                <h4 class="filter-form-name cost">Стоимость, ₽:</h4>
                             </legend>
-                            <label class="price-form price-form-one">
-                                <input class="price-form-field" type="number" min="0" max="15000" name="min-price" value="0">
-                                от
-                            </label>
-                            <label class="price-form price-form-two">
-                                <input class="price-form-field" type="number" min="0" max="15000" name="max-price" value="9000">
-                                до
-                            </label>
-                            <div class="slider-min"></div>
-                            <input class="slider" type="range" min="0" max="15000" step="1">
+                            <div class="range">
+                                <div class="range-wrapper">
+                                    <label class="price-form price-form-one">
+                                        <input class="price-form-field" type="number" min="0" max="15000" name="min-price" value="0">
+                                        <span class="price-form-name">от</span>
+                                    </label>
+                                    <label class="price-form price-form-two">
+                                        <input class="price-form-field" type="number" min="0" max="12000" name="max-price" value="9000">
+                                        <span class="price-form-name">до</span>
+                                    </label>
+                                </div>
+                                <div class="range-scale">
+                                    <div class="range-bar">
+                                        <button class="range-toggle toggle-min">
+                                            <span class="visually-hidden">изменить минимальную цену</span>
+                                        </button>
+                                        <button class="range-toggle toggle-max">
+                                            <span class="visually-hidden">изменить максимальную цену</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </fieldset>
                         <div class="filter-buttons">
                             <button class="apply button-blue" type="submit">Применить</button>
