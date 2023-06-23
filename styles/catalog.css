@@ -232,6 +232,65 @@
     height: 20px;
 }
 
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 287px;
+}
+
+input[type="range"]:focus,
+input[type="range"]:active{
+border: 0;
+outline: none;
+}
+/***** Стили дорожки *****/
+/***** Chrome, Safari, Opera и Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #FFF;
+    height: 4px;
+}
+
+  /******** Firefox ********/
+input[type="range"]::-moz-range-track {
+    background: #FFF;
+    height: 4px;
+}
+
+/***** Стили ползунка *****/
+/***** Chrome, Safari, Opera и Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Сбрасываем вид по умолчанию */
+    appearance: none;
+    margin-top: -8px; /* Центрируем ползунок на дорожке */
+    margin-left: 82px;
+    background-color: #FFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.slider-min {
+    position: absolute;
+    background-color: #FFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-top: 90px;
+}
+
+/***** Стили нажатие *****/
+  /***** Chrome, Safari, Opera и Edge Chromium *****/
+input[type="range"]:active::-webkit-slider-thumb {
+    border: 1.5px solid #3F5E72;
+}
+
+  /******** Firefox ********/
+input[type="range"]:active::-moz-range-thumb {
+    border: 1.5px solid #3F5E72;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
