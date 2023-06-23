@@ -46,53 +46,132 @@
     color: #FFFFFF4D;
 }
 
+/* FILTERS */
 .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
 .filter-form {
-    border: 0;
+    border: none;
+    margin: 0;
     padding: 0;
+}
+
+.filter-form:first-child {
+    width: 150px;
+    margin-right: 70px;
+}
+
+.filter-form:nth-child(2) {
+    width: 151px;
+    margin-right: 100px;
+}
+
+.filter-form-name{
+    padding: 0 0 32px 0;
     margin: 0;
 }
 
-.filter-form p {
-    margin: 0;
+
+/* CHECKBOX, RADIO START */
+
+.checkbox-container, .radio-container {
+    display: block;
+    position: relative;
     margin-bottom: 16px;
-}
-
-.filter-form p:last-child {
-    margin: 0;
-}
-
-.filter-form-name {
-    margin: 0;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: capitalize;
-    padding-bottom: 32px;
-}
-
-legend {
-    padding: 0;
-}
-
-.filter-form label {
+    padding-left: 36px;
+    cursor: pointer;
     font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.input[type="number"] {
-    outline: none;
-    outline-offset: none;
-    border: none;
-    writing-mode: none;
+.checkbox-real, .radio-real {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-style {
+    position: absolute;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+}
+
+
+/* как лучше написать .checkbox-container:active .checkbox-real ~ .checkbox-style
+или .checkbox-style:active */
+.checkbox-container:focus .checkbox-real ~ .checkbox-style {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border: 1.50px solid #83B3D3;
+}
+
+.checkbox-container:active, .radio-container:active{
+    opacity: 0.7;
+}
+
+.checkbox-style:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container .checkbox-real:checked ~ .checkbox-style::after {
+    display: block;
+}
+
+.checkbox-container .checkbox-style::after {
+    background-image: url("../img/icons/tick.svg");
+    width: 12px;
+    height: 10px;
+    margin: 5px 0 0 5px;
+}
+
+.radio-style {
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+}
+
+.radio-style:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container .radio-real:checked ~ .radio-style::after {
+    display: block;
+}
+
+.radio-container .radio-style::after {
+    background-image: url("../img/icons/tickCircle.svg");
+    width: 10px;
+    height: 10px;
+    margin: 5px 0 0 5px;
+}
+
+/* CHECKBOX, RADIO END */
+
+
+/* PRICE FORM START */
+.filter-form legend {
+    padding: 0;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .price-form {
@@ -107,6 +186,28 @@ legend {
     margin-bottom: 36px;
 }
 
+.price-form-field {
+    border: none;
+    color: #000000;
+    font-family: inherit;
+    background-color: #F2F2F2;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.price-form:hover, .price-form:active,
+.price-form-field:hover, .price-form-field:active {
+    background-color: #E6E6E6;
+}
+
+.price-form:focus {
+    border: 3px solid #83B3D3;
+    background-color: #E6E6E6;
+}
+
 .price-form-one {
     border-radius: 4px 0 0 4px;
     margin-right: 2px;
@@ -116,13 +217,6 @@ legend {
     border-radius: 0 4px 4px 0;
 }
 
-.filter-form:nth-child(1) {
-    margin-right: 70px;
-}
-
-.filter-form:nth-child(2) {
-    margin-right: 140px;
-}
 
 .filter-form:nth-child(3) {
     display: flex;
@@ -130,10 +224,6 @@ legend {
     margin-right: 70px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    margin: 0;
-}
 
 .slider {
     display: flex;
@@ -142,8 +232,24 @@ input[type="radio"] {
     height: 20px;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/* PRICE FORM END */
+
+
 .filter-buttons {
     display: block;
+    margin-top: 56px;
 }
 
 .apply,
@@ -184,6 +290,8 @@ input[type="radio"] {
     border-radius: 4px;
 }
 
+/* CATALOG CONTENT */
+
 .catalog {
     padding: 0 70px;
 }
@@ -213,6 +321,8 @@ input[type="radio"] {
     margin-right: 200px;
 }
 
+
+/* rewrite */
 .select-control {
     font-family: inherit;
     width: 292px;
@@ -229,10 +339,7 @@ input[type="radio"] {
     background-size: 12px 7px;
     background-position: center right 20px;
 }
-
-.sorting option {
-
-}
+/* rewrite */
 
 .layout-list,
 .hotels-list,
