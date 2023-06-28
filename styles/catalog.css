@@ -8,10 +8,8 @@
 
 .filter-links {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
     gap: 10px;
     margin-bottom: 40px;
@@ -20,7 +18,7 @@
 .filter h1 {
     font-weight: 700;
     font-size: 60px;
-    line-height: 1.3em;
+    line-height: 1.2em;
     padding: 0;
     margin: 0;
     margin-bottom: 8px;
@@ -46,82 +44,184 @@
     color: #FFFFFF4D;
 }
 
+/* FILTERS */
 .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
 .filter-form {
-    border: 0;
+    border: none;
+    margin: 0;
     padding: 0;
+}
+
+.filter-form:first-child {
+    width: 150px;
+    margin-right: 70px;
+}
+
+.filter-form:nth-child(2) {
+    width: 151px;
+    margin-right: 151px;
+}
+
+.filter-form-name{
+    padding: 0 0 32px 0;
     margin: 0;
 }
 
-.filter-form p {
-    margin: 0;
+
+/* CHECKBOX, RADIO START */
+
+.checkbox-container, .radio-container {
+    display: block;
+    position: relative;
     margin-bottom: 16px;
-}
-
-.filter-form p:last-child {
-    margin: 0;
-}
-
-.filter-form-name {
-    margin: 0;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: capitalize;
-    padding-bottom: 32px;
-}
-
-legend {
-    padding: 0;
-}
-
-.filter-form label {
+    padding-left: 36px;
+    cursor: pointer;
     font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.input[type="number"] {
-    outline: none;
-    outline-offset: none;
-    border: none;
-    writing-mode: none;
+.checkbox-real, .radio-real {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-style {
+    position: absolute;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+}
+
+
+/* как лучше написать .checkbox-container:active .checkbox-real ~ .checkbox-style
+или .checkbox-style:active */
+.checkbox-container:focus .checkbox-real ~ .checkbox-style {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border: 1.50px solid #83B3D3;
+}
+
+.checkbox-container:active, .radio-container:active{
+    opacity: 0.7;
+}
+
+.checkbox-style:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container .checkbox-real:checked ~ .checkbox-style::after {
+    display: block;
+}
+
+.checkbox-container .checkbox-style::after {
+    background-image: url("../img/icons/tick.svg");
+    width: 12px;
+    height: 10px;
+    margin: 5px 0 0 5px;
+}
+
+.radio-style {
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+}
+
+.radio-style:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container .radio-real:checked ~ .radio-style::after {
+    display: block;
+}
+
+.radio-container .radio-style::after {
+    background-image: url("../img/icons/tickCircle.svg");
+    width: 10px;
+    height: 10px;
+    margin: 5px 0 0 5px;
+}
+
+/* CHECKBOX, RADIO END */
+
+/* PRICE FORM START */
+.filter-form legend {
+    padding: 0;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.price-wrapper {
+    display: flex;
+    gap: 2px;
 }
 
 .price-form {
-    display: inline-block;
-    justify-content: space-between;
+    position: relative;
+}
+
+.price-form-field {
+    display: inline;
+    position: relative;
+    border: 2px solid #F2F2F2;
+    padding: 11px 20px;
+    color: #000000;
     font-family: inherit;
-    color: #5e5a594d;
-    margin: 0;
     background-color: #F2F2F2;
-    padding: 12px 20px;
-    height: 48px;
-    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 18px;
+    outline: none;
+    outline-offset: 0;
+    width: 143px;
+}
+
+.price-form-name {
+    color: #0000001D;
+    font-family: inherit;
+    position: absolute;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    top: 13px;
+    right: 20px;
 }
 
 .price-form-one {
     border-radius: 4px 0 0 4px;
-    margin-right: 2px;
 }
 
 .price-form-two {
     border-radius: 0 4px 4px 0;
 }
 
-.filter-form:nth-child(1) {
-    margin-right: 70px;
+.price-form-field:hover, .price-form-field:active {
+    background-color: #E6E6E6;
+    border: 2px solid #E6E6E6;
 }
 
-.filter-form:nth-child(2) {
-    margin-right: 140px;
+.price-form-field:focus {
+    border: 2px solid #83B3D3;
+    background-color: #E6E6E6;
 }
 
 .filter-form:nth-child(3) {
@@ -130,20 +230,56 @@ legend {
     margin-right: 70px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+/* RANGE */
+
+.range-scale {
+    display: block;
+    margin-top: 43px;
+    position: relative;
+    height: 4px;
+    background-color: #ffffff25;
+    width: 287px;
+}
+
+.range-bar {
+    height: 4px;
+    width: 226px;
+    background-color: #FFF;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    top: -8px;
+}
+
+.toggle-max {
+    margin-left: 208px;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+    border: 3px solid #83B3D3;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     margin: 0;
 }
 
-.slider {
-    display: flex;
-    margin: 0;
-    width: 287px;
-    height: 20px;
-}
+/* PRICE FORM END */
+
 
 .filter-buttons {
     display: block;
+    margin-top: 56px;
 }
 
 .apply,
@@ -184,6 +320,8 @@ input[type="radio"] {
     border-radius: 4px;
 }
 
+/* CATALOG CONTENT */
+
 .catalog {
     padding: 0 70px;
 }
@@ -213,32 +351,41 @@ input[type="radio"] {
     margin-right: 200px;
 }
 
-.select-control {
-    font-family: inherit;
+
+/* rewrite */
+.select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
     width: 292px;
     height: 49px;
+}
+
+  /* Control */
+.select-control {
+    width: 100%;
+    padding: 14px 20px;
+    margin-right: 107px;
+    font: inherit;
+    color: #333333;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
-    cursor: pointer;
+    background-color: #ffffff;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     background-image: url("../img/icons/filterArrow.svg");
     background-repeat: no-repeat;
-    background-size: 12px 7px;
     background-position: center right 20px;
+    appearance: none;
+    cursor: pointer;
 }
-
-.sorting option {
-
-}
+/* rewrite */
 
 .layout-list,
 .hotels-list,
 .pagination {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     list-style: none;
 }
@@ -271,10 +418,8 @@ input[type="radio"] {
 
 .hotels-list {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     gap: 20px;
@@ -353,13 +498,8 @@ input[type="radio"] {
 }
 
 .hotel-about:hover {
-    -webkit-transition: -webkit-transform ease-in-out 0.3s;
     transition: -webkit-transform ease-in-out 0.3s;
-    transition: transform ease-in-out 0.3s;
-    transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
-    -webkit-transform: scale(0.95);
-        -ms-transform: scale(0.95);
-            transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .hotel-about:active, .hotel-item-h3:active {
@@ -436,8 +576,6 @@ input[type="radio"] {
 
 .light-line {
     border: 1px solid #E6E6E6;
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     margin-bottom: 40px;
 }
