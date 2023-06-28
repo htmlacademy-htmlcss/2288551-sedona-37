@@ -268,13 +268,13 @@ ul.navigation {
     list-style: none;
     padding: 0;
     margin: 5px 0;
-    margin-right: 237px;
+    margin-right: 235px;
     align-items: center;
 }
 
 .social-item {
     display: inline-block;
-    padding: 12px 12px;
+    padding: 12px 13px;
 }
 
 .social-item path:hover {
@@ -387,7 +387,7 @@ ul.navigation {
     background-color: #FFFFFF;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
-    padding: 64px 70px;
+    padding: 60px 54px 64px 64px;
 }
 
 .modal h2 {
@@ -522,7 +522,7 @@ ul.navigation {
 
 .field-data {
     width: 430px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 4px;
     background-image: url("../img/icons/calendar.svg");
     background-repeat: no-repeat;
@@ -551,12 +551,11 @@ ul.navigation {
     background-color: #F2F2F2;
     border-radius: 4px 0 0 4px;
     width: 40px;
-    height: 48px;
     padding-bottom: 10px;
     cursor: pointer;
 }
 
-.button-minus:hover .path-minus{
+.button-minus:hover svg .path-minus{
     fill: #000000;
     fill-opacity: 1;
 }
@@ -571,11 +570,10 @@ ul.navigation {
     background-color: #F2F2F2;
     border-radius: 0 4px 4px 0;
     width: 40px;
-    height: 48px;
     cursor: pointer;
 }
 
-.button-plus:hover .path-plus{
+.button-plus:hover svg .path-plus{
     fill: #000000;
     fill-opacity: 1;
 }
@@ -600,10 +598,25 @@ ul.navigation {
     color: #FFFFFF;
     padding: 15px 18px 18px 22px;
     border-radius: 10px;
-    background: #333;
+    background-color: #333;
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
     width: 256px;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(15%);
+}
+
+.tooltip-text:before,
+.tooltip-text:after
+{
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    left: 50%;
+    margin-left: -8px;
+    border-bottom: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 0;
 }
 
 .tooltip {
@@ -615,6 +628,7 @@ ul.navigation {
 .tooltip-toggle:hover + span.tooltip-text,
 .tooltip-toggle:focus + span.tooltip-text {
     display: block;
+    transition: 0.3s;
 }
 
 

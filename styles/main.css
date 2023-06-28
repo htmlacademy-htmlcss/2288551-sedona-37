@@ -176,7 +176,7 @@
 
 .hotel-search {
     text-align: center;
-    padding: 96px 304px;
+    padding: 95px 304px;
 }
 
 .hotel-search p {
@@ -203,7 +203,7 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
-    line-height: 2em;
+    line-height: 1.8em;
     display: inline-block;
     padding: 8px 50px;
     border-radius: 4px;

@@ -160,9 +160,6 @@
 }
 
 /* CHECKBOX, RADIO END */
-.cost {
-    margin-bottom: 10px;
-}
 
 /* PRICE FORM START */
 .filter-form legend {
@@ -174,54 +171,58 @@
     line-height: 24px;
 }
 
+.price-wrapper {
+    display: flex;
+    gap: 2px;
+}
+
 .price-form {
-    font-family: inherit;
-    color: #5e5a594d;
-    margin: 0;
-    background-color: #F2F2F2;
-    padding: 11px 20px;
+    position: relative;
 }
 
 .price-form-field {
     display: inline;
-    border: none;
+    position: relative;
+    border: 2px solid #F2F2F2;
+    padding: 11px 20px;
     color: #000000;
     font-family: inherit;
     background-color: #F2F2F2;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
-    outline: 0;
+    outline: none;
     outline-offset: 0;
-    width: 75px;
+    width: 143px;
 }
 
 .price-form-name {
+    color: #0000001D;
     font-family: inherit;
+    position: absolute;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-}
-
-.price-form:hover, .price-form:active,
-.price-form-field:hover, .price-form-field:active {
-    background-color: #E6E6E6;
-}
-
-.price-form:focus {
-    border: 3px solid #83B3D3;
-    background-color: #E6E6E6;
+    top: 13px;
+    right: 20px;
 }
 
 .price-form-one {
     border-radius: 4px 0 0 4px;
-    margin-right: 3px;
 }
 
 .price-form-two {
     border-radius: 0 4px 4px 0;
 }
 
+.price-form-field:hover, .price-form-field:active {
+    background-color: #E6E6E6;
+    border: 2px solid #E6E6E6;
+}
+
+.price-form-field:focus {
+    border: 2px solid #83B3D3;
+    background-color: #E6E6E6;
+}
 
 .filter-form:nth-child(3) {
     display: flex;
@@ -230,13 +231,10 @@
 }
 
 /* RANGE */
-.range-wrapper {
-    display: inline;
-}
 
 .range-scale {
     display: block;
-    margin-top: 55px;
+    margin-top: 43px;
     position: relative;
     height: 4px;
     background-color: #ffffff25;
