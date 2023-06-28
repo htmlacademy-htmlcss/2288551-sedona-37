@@ -45,10 +45,9 @@
               </button>
             </li>
             <li>
-              <button class="button-want button-brown" type="button" onclick="document.location='#'">
+              <button class="button-want button-brown" type="button">
                 Хочу сюда!
               </button>
-              <!--это ссылка на попап -->
             </li>
           </ul>
         </nav>
@@ -134,10 +133,9 @@
           <h2 class="hotel-search-h2">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button-brown" href="#">
+          <a class="button-brown button-search-hotel" href="#">
             ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
           </a>
-          <!-- ссылка на попап а не стр -->
         </section>
 
         <!-- SUBSCRIBE -->
@@ -218,27 +216,32 @@
         </div>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container visually-hidden">
       <div class="modal">
         <div class="modal-searh">
           <h2>Поиск гостиницы в Седоне</h2>
           <button class="button-close">
             <span class="visually-hidden">Закрыть</span>
-            <img class="button-close-img" href="img/icons/closeButton.svg" width="14"
-            height="14">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479
+              1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982
+              14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="black"/>
+            </svg>
           </button>
         </div>
         <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
           <label class="modal-content-arrival">
             <h4 class="modal-content-h4">Дата заезда:</h4>
-            <input class="field field-data" type="data" name="trip-start" value="27 апреля 2020" min="2023-01-01" max="2023-12-31" required>
+            <input class="field field-data" type="data" name="trip-start" value="27 апреля 2020" min="2023-01-01"
+              max="2023-12-31" required>
           </label>
           <span class="modal-content-warn warn-red">
             Мы не можем отправить вас в прошлое.
           </span>
           <label class="modal-content-departure">
             <h4 class="modal-content-h4">Дата выезда:</h4>
-            <input class="field field-data" type="data" name="trip-end" value="1 сентября 2023" min="2023-01-01" max="2024-12-31" required>
+            <input class="field field-data" type="data" name="trip-end" value="1 сентября 2023" min="2023-01-01"
+              max="2024-12-31" required>
           </label>
           <span class="modal-content-warn">
             На эти даты есть свободные номера. Пока есть.
@@ -249,32 +252,41 @@
               <div class="button-number">
                 <button class="button-minus">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="button-number-path" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    <path class="path-minus" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
                 <input class="field field-number" type="number" name="adult-count" value="1">
                 <button class="button-plus">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="button-number-path" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    <path class="path-plus" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157"
+                      fill-opacity="0.3" />
                   </svg>
                 </button>
               </div>
             </label>
             <label class="modal-content-child">
               <h4 class="modal-content-h4">Дети:</h4>
-              <button class="modal-content-info" data-title="Укажите количество детей,
-                которые будут с вами, возраст
-                которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">i</button>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip">Укажите количество детей,
+                  которые будут с вами, возраст
+                  которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
               <div class="button-number">
                 <button class="button-minus">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="button-number-path" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    <path class="path-minus" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
                 <input class="field field-number" type="number" name="child-count" value="0">
                 <button class="button-plus">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="button-number-path" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    <path class="path-plus" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157"
+                      fill-opacity="0.3" />
                   </svg>
                 </button>
               </div>
@@ -284,6 +296,7 @@
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 
 </html>
