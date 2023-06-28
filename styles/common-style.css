@@ -604,19 +604,17 @@ ul.navigation {
     transform: translateX(-50%) translateY(15%);
 }
 
-.tooltip-text:before,
-.tooltip-text:after
-{
-    content: "";
-    position: absolute;
-    z-index: 1000;
-    top: -10px;
-    left: 50%;
-    margin-left: -8px;
-    border-bottom: 10px solid #333;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 0;
+.tooltip-text:after {
+    content:'';
+    background-image: url('../img/icons/triangle.svg');
+    width: 19px;
+    height: 9px;
+    position:absolute;
+    top: -8px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tooltip {
