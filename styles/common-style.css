@@ -1,7 +1,6 @@
 *,
 *::after,
 *::before {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -93,10 +92,6 @@ body {
     padding: 0;
 }
 
-ul.navigation {
-    margin-right: 284px;
-}
-
 .navigation-link {
     display: block;
     text-decoration: none;
@@ -113,7 +108,7 @@ ul.navigation {
 }
 
 .logo {
-    margin-right: 30px;
+    margin-right: 29px;
     padding: 0;
     z-index: 1;
 }
@@ -135,13 +130,13 @@ ul.navigation {
     display: -webkit-box;
     display: flex;
     align-items: center;
-    width: 268px;
-    height: 64px;
+    height: 67px;
+    margin-left: 285px;
 }
 
 .button-search,
 .button-like {
-    padding: 21px 12px;
+    padding: 22px 12px 19px;
     border: #FFFFFF;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -387,7 +382,8 @@ ul.navigation {
     background-color: #FFFFFF;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
-    padding: 60px 54px 64px 64px;
+    padding: 63px 67px 65px 72px;
+    width: 717px;
 }
 
 .modal h2 {
@@ -397,15 +393,14 @@ ul.navigation {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
-    margin: 0 131px 64px 0;
+    margin: 0 0 64px 0;
 }
 
-.modal h4 {
+.modal-content-name {
     margin: 0;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
     color: #000000;
 }
 
@@ -423,22 +418,16 @@ ul.navigation {
     color: #FF5757;
 }
 
-.modal-content {
-    width: 577px;
-}
-
-.modal-searh {
-    display: flex;
-}
-
 .button-close {
-    right: 52px;
+    position: absolute;
     background-color: #F2F2F2;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    width: 53px;
-    height: 53px;
+    width: 52px;
+    height: 52px;
+    top: 67px;
+    right: 50px;
 }
 
 .button-close:hover {
@@ -450,63 +439,42 @@ ul.navigation {
     border: 3px solid #83B3D3;
 }
 
-.button-close:active path{
+.button-close:active path {
     background-color: #E6E6E6;
-    fill:#0000003D;
-}
-
-.modal-content-h4 {
-    display: inline-block;
-}
-
-.modal-content-arrival h4 {
-    margin-right: 24px;
-}
-
-.modal-content-departure h4 {
-    margin-right: 18px;
-}
-
-.modal-content-adult h4,
-.modal-content-info {
-    margin: auto 0;
-}
-
-.modal-content-adult,
-.modal-content-child {
-    display: flex;
+    fill: #0000003D;
 }
 
 .modal-content-arrival,
 .modal-content-departure {
     margin-bottom: 4px;
-}
-
-.modal-content-child h4 {
-    margin-right: 10px;
-    margin: auto 10px auto 0;
-}
-
-.modal-content-people {
-    margin-bottom: 48px;
     display: flex;
-}
-
-.modal-content-child {
-    margin-left: 88px;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .field {
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
     color: #000;
     border: 3px solid #F2F2F2;
     background-color: #F2F2F2;
     outline: 0;
     outline-offset: 0;
+}
+
+.field-data {
+    width: 440px;
+    padding: 10px 20px 10px 17px;
+    border-radius: 4px;
+    background-image: url("../img/icons/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: 395px 12px;
+}
+
+.field-number {
+    width: 31px;
+    text-align: center;
 }
 
 .field-data:hover,
@@ -520,62 +488,63 @@ ul.navigation {
     background-color: #E6E6E6;
 }
 
-.field-data {
-    width: 430px;
-    padding: 10px 20px;
-    border-radius: 4px;
-    background-image: url("../img/icons/calendar.svg");
-    background-repeat: no-repeat;
-    background-position: 390px 14px;
+.modal-content-people {
+    margin-bottom: 48px;
+    display: flex;
 }
 
-.field-number {
-    width: 31px;
-    height: 48px;
-    text-align: center;
+.modal-content-adult,
+.modal-content-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.button-modal-content {
-    font-family: inherit;
-    border: none;
-    padding: 18px 256px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+.modal-content-child {
+    position: relative;
+    width: 242px;
+    margin-left: 88px;
 }
 
-.button-minus {
-    border: none;
-    background-color: #F2F2F2;
-    border-radius: 4px 0 0 4px;
-    width: 40px;
-    padding-bottom: 10px;
-    cursor: pointer;
-}
-
-.button-minus:hover svg .path-minus{
-    fill: #000000;
-    fill-opacity: 1;
+.modal-content-adult {
+    width: 247px;
 }
 
 .button-number {
     display: flex;
-    margin-left: 46px;
+    height: 48px;
+}
+
+.button-minus,
+.button-plus {
+    display: flex;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #F2F2F2;
+    border: none;
+}
+
+.button-minus {
+    border-radius: 4px 0 0 4px;
 }
 
 .button-plus {
-    border: none;
-    background-color: #F2F2F2;
     border-radius: 0 4px 4px 0;
-    width: 40px;
-    cursor: pointer;
 }
 
-.button-plus:hover svg .path-plus{
+
+.button-minus:hover path,
+.button-plus:hover path {
     fill: #000000;
     fill-opacity: 1;
+}
+
+.button-minus:active path,
+.button-plus:active path {
+    fill: #000000;
+    fill-opacity: 0.2;
 }
 
 .tooltip-toggle {
@@ -596,23 +565,23 @@ ul.navigation {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    padding: 15px 18px 18px 22px;
+    padding: 19px 22px 22px;
     border-radius: 10px;
     background-color: #333;
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
     width: 256px;
-    transform: translateX(-50%) translateY(15%);
+    transform: translateX(-45%) translateY(10%);
 }
 
 .tooltip-text:after {
-    content:'';
+    content: '';
     background-image: url('../img/icons/triangle.svg');
     width: 19px;
     height: 9px;
-    position:absolute;
-    top: -8px;
-    left:0;
-    right:0;
+    position: absolute;
+    top: -8.5px;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -620,7 +589,7 @@ ul.navigation {
 .tooltip {
     position: absolute;
     top: 7px;
-    left: 55px;
+    left: 60px;
 }
 
 .tooltip-toggle:hover + span.tooltip-text,
@@ -629,6 +598,16 @@ ul.navigation {
     transition: 0.3s;
 }
 
+.button-modal-content {
+    font-family: inherit;
+    border: none;
+    padding: 18px 256px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

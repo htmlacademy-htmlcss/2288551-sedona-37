@@ -67,8 +67,7 @@
 }
 
 .advantage-item p {
-    margin: 0;
-    font-weight: 400;
+    display: block;
     font-size: 18px;
     line-height: 21px;
 }
@@ -101,13 +100,18 @@
     margin: 0;
 }
 
-.advantage-separator {
+.advantage-item p::before {
+    content: " ";
+    display: block;
     margin: 30px auto;
     border-bottom: 2px solid #0000004D;
     width: 60px;
 }
 
-.advantage-separator-light {
+.advantage-item:first-child p::before,
+.advantage-item:nth-child(7) p::before {
+    content: " ";
+    display: block;
     border-bottom: 2px solid #FFFFFF4D;
     width: 60px;
     margin: 0 auto 30px;
@@ -162,7 +166,7 @@
 
 .advantage-list-item {
     width: 400px;
-    height: 385px;
+    min-height: 385px;
     padding: 81px 85px;
     text-align: center;
     font-size: 18px;
