@@ -11,6 +11,8 @@ buttonClose.onclick = function () {
     modalContainer.classList.add("visually-hidden");
 }
 
-buttonSearchHotel.onclick = function () {
-    modalContainer.classList.remove("visually-hidden");
+if (buttonSearchHotel) {
+    buttonSearchHotel.onclick = function () {
+        modalContainer.classList.remove("visually-hidden");
+    }
 }
