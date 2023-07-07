@@ -34,15 +34,11 @@
           </ul>
           <ul class="button-nav-list">
             <li>
-              <button class="button-search" aria-label="поиск по сайту">
-                <img src="img/icons/search.svg" alt="search" width="20" height="20">
-              </button>
+              <button class="button-search" type="button" aria-label="поиск по сайту"></button>
             </li>
             <li>
               <span class="like-number">12</span>
-              <button class="button-like" type="button" aria-label="лайк">
-                <img src="img/icons/heart.svg" alt="put a like" width="20" height="20">
-              </button>
+              <button class="button-like" type="button" aria-label="лайк"></button>
             </li>
             <li>
               <button class="button-want button-brown" type="button">
@@ -61,7 +57,6 @@
           <!-- hidden h1, write for screenreaders -->
           <img class="welcome-img" src="img/icons/welcome.svg" alt="welcom to the gorgeous sedona,
             because the grand canyon sucks" width="458" height="352">
-          <img class="divider" src="img/images/divider.png" alt="divider" width="1200" height="57">
           <div class="about-sedona">
             <h2>Седона — небольшой городок в Аризоне,<br>
               заслуживающий большего!</h2>
@@ -104,20 +99,20 @@
             <p>Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="advantage-advice">
-            <li class="advantage-advice-item">
-              <img src="img/icons/home.svg" alt="домик" width="75" height="72">
+            <li class="advantage-advice-item home-advice">
+              <span class="visually-hidden">картинка домика</span>
               <h3 class="recommend-h3">Жильё</h3>
               <p>Рекомендуем пожить<br> в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
-            <li class="advantage-advice-item">
-              <img src="img/icons/food.svg" alt="бургер" width="75" height="72">
+            <li class="advantage-advice-item food-advice">
+              <span class="visually-hidden">картинка бургера</span>
               <h3 class="recommend-h3">Еда</h3>
               <p>Всегда заказывайте<br>
                 топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
-            <li class="advantage-advice-item">
-              <img src="img/icons/souvenir.svg" alt="коробка с бантиком" width="75" height="72">
+            <li class="advantage-advice-item souvenir-advice">
+              <span class="visually-hidden">картинка коробки с бантиком</span>
               <h3 class="recommend-h3">Сувениры</h3>
               <p>Не только китайского,<br>
                 но и настоящего местного<br> производства!</p>
@@ -141,7 +136,7 @@
           <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Ваш e-mail</label>
-            <input class="subscribe-email" type="email" name="email" id="email" placeholder="Ваш e-mail">
+            <input class="subscribe-email" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
             <button class="button-subscribe button-blue" type="submit">Подписаться</button>
           </form>
         </section>
@@ -216,7 +211,7 @@
     <div class="modal-container visually-hidden">
       <div class="modal">
         <h2>Поиск гостиницы в Седоне</h2>
-        <button class="button-close">
+        <button class="button-close" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479
@@ -243,13 +238,13 @@
             <div class="modal-content-adult">
               <span class="modal-content-name">Взрослые:</span>
               <div class="button-number">
-                <button class="button-minus" type="button">
+                <button class="button-minus" type="button" aria-label="уменьшить количество">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-minus" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="field field-number" type="number" name="adult-count" value="2">
-                <button class="button-plus" type="button">
+                <input class="field field-number" type="number" name="adult-count" value="2" required>
+                <button class="button-plus" type="button" aria-label="увеличить количество">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-plus" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
@@ -259,7 +254,7 @@
             <div class="modal-content-child">
               <span class="modal-content-name">Дети:</span>
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                <button class="tooltip-toggle" type="button" aria-labelledby="подсказка">
                   <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
                   </svg>
@@ -271,13 +266,13 @@
                 </span>
               </span>
               <div class="button-number">
-                <button class="button-minus" type="button">
+                <button class="button-minus" type="button" aria-label="уменьшить количество">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-minus" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="field field-number" type="number" name="child-count" value="2">
-                <button class="button-plus" type="button">
+                <input class="field field-number" type="number" name="child-count" value="2" required>
+                <button class="button-plus" type="button" aria-label="увеличить количество">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-plus" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
