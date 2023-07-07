@@ -103,7 +103,7 @@ img {
 .navigation {
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    width: 600px;
 }
 
 .navigation-link {
@@ -1302,7 +1302,7 @@ input::-webkit-inner-spin-button {
     font-size: 30px;
     line-height: 1.2em;
     margin: 0;
-    min-width: 338px;
+    width: 380px;
     display: flex;
     flex-wrap: wrap;
 }
