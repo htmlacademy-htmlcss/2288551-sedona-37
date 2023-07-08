@@ -317,8 +317,8 @@ img {
   justify-content: center;
   width: 1060px;
   min-height: 50px;
-  margin: 30px 68px 20px;
-  gap: 228px;
+  margin: 30px 70px 20px;
+  gap: 232px;
 }
 
 .social-list {
@@ -326,7 +326,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 150px;
+  width: 148px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -353,7 +353,6 @@ img {
 
 .phone a {
   text-decoration: none;
-  font-style: normal;
   color: #000000;
   font-weight: 400;
   font-size: 40px;
@@ -378,7 +377,7 @@ img {
 }
 
 .htmlacademy {
-  padding: 17px 0 15px 8px;
+  margin: 19px 0 14px;
 }
 
 .htmlacademy:hover path,
@@ -1062,78 +1061,60 @@ input[type='number'] {
 
 /* CHECKBOX, RADIO START */
 
-.checkbox-container,
-.radio-container {
-  display: -webkit-box;
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-bottom: 16px;
-  padding-left: 36px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  user-select: none;
-}
-
 .checkbox-real,
 .radio-real {
   position: absolute;
   opacity: 0;
 }
 
-.checkbox-style {
-  position: absolute;
+.checkbox-real + label,
+.radio-real + label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkbox-real + label::before,
+.radio-real + label::before {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #ffffff;
+}
+
+.checkbox-real + label::before {
   border-radius: 4px;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #ffffff;
 }
 
-.checkbox-style::after {
-  content: " ";
-  position: absolute;
-  display: none;
-}
-
-.checkbox-container .checkbox-style::after {
-  background-image: url("../img/icons/tick.svg");
-  width: 12px;
-  height: 10px;
-  margin: 5px 0 0 4px;
-}
-
-.checkbox-real:checked ~ .checkbox-style::after {
-  display: block;
-}
-
-.radio-style {
-  position: absolute;
+.radio-real + label::before {
   border-radius: 50%;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #ffffff;
 }
 
-.radio-style::after {
-  content: " ";
-  position: absolute;
-  display: none;
+.checkbox-real:checked + label::before {
+  background-image: url("../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 12.2px 10px;
 }
 
-.radio-container .radio-style::after {
+.radio-real:checked + label::before {
   background-image: url("../img/icons/tick-circle.svg");
-  width: 10px;
-  height: 10px;
-  margin: 5px 0 0 5px;
-}
-
-.radio-real:checked ~ .radio-style::after {
-  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10px 10px;
 }
 
 .checkbox-container:hover,
@@ -1146,13 +1127,18 @@ input[type='number'] {
   opacity: 0.3;
 }
 
+.checkbox-real:focus + label::before,
+.radio-real:focus + label::before {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
 .checkbox-container:disabled,
 .radio-container:disabled {
-  opacity: 0.6;
-  color: #0c4368;
+  background-color: black;
 }
 
 /* CHECKBOX, RADIO END */
+
 
 /* PRICE FORM START */
 .filter-form legend {

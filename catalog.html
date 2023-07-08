@@ -66,41 +66,35 @@
               <legend>
                 <h2 class="filter-form-name">Инфраструктура:</h2>
               </legend>
-              <label class="checkbox-container" for="pool">
+              <div class="checkbox-container">
                 <input class="checkbox-real" type="checkbox" name="pool" id="pool" checked>
-                Бассейн
-                <span class="checkbox-style"></span>
-              </label>
-              <label class="checkbox-container" for="parking">
+                <label for="pool">Бассейн</label>
+              </div>
+              <div class="checkbox-container">
                 <input class="checkbox-real" type="checkbox" name="parking" id="parking" checked>
-                Парковка
-                <span class="checkbox-style"></span>
-              </label>
-              <label class="checkbox-container" for="wi-fi">
+                <label for="parking">Парковка</label>
+              </div>
+              <div class="checkbox-container">
                 <input class="checkbox-real" type="checkbox" name="wi-fi" id="wi-fi">
-                Wi-Fi
-                <span class="checkbox-style"></span>
-              </label>
+                <label class="checkbox-container" for="wi-fi">Wi-Fi</label>
+              </div>
             </fieldset>
             <fieldset class="filter-form">
               <legend>
                 <h2 class="filter-form-name">Тип жилья:</h2>
               </legend>
-              <label class="radio-container" for="hotel">
+              <div class="radio-container">
                 <input class="radio-real" type="radio" name="house-type" id="hotel" value="hotel" checked>
-                Гостиница
-                <span class="radio-style"></span>
-              </label>
-              <label class="radio-container" for="motel">
+                <label for="hotel">Гостиница</label>
+              </div>
+              <div class="radio-container">
                 <input class="radio-real" type="radio" name="house-type" id="motel" value="motel">
-                Мотель
-                <span class="radio-style"></span>
-              </label>
-              <label class="radio-container" for="apartments">
+                <label for="motel">Мотель</label>
+              </div>
+              <div class="radio-container">
                 <input class="radio-real" type="radio" name="house-type" id="apartments" value="apartments">
-                Апартаменты
-                <span class="radio-style"></span>
-              </label>
+                <label for="apartments">Апартаменты</label>
+              </div>
             </fieldset>
             <fieldset class="filter-form">
               <legend>
@@ -159,10 +153,12 @@
             </div>
             <ul class="layout-list">
               <li>
-                <button type="button" class="layout current-layout grid-mode" type="button" aria-label="раскладка карточками"></button>
+                <button type="button" class="layout current-layout grid-mode" type="button"
+                  aria-label="раскладка карточками"></button>
               </li>
               <li>
-                <button type="button" class="layout caption-mode" type="button" aria-label="раскладка картинка снизу подпись"></button>
+                <button type="button" class="layout caption-mode" type="button"
+                  aria-label="раскладка картинка снизу подпись"></button>
               </li>
               <li>
                 <button type="button" class="layout list-mode" type="button" aria-label="раскладка список"></button>
