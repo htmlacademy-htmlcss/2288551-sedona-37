@@ -18,7 +18,7 @@
       <!-- HEADER -->
       <header class="main-header">
         <nav class="all-navigation">
-          <a href="index.html" class="logo">
+          <a class="logo" href="index.html">
             <img src="img/icons/logo.svg" alt="логотип сайта седоны" width="140" height="70">
           </a>
           <ul class="navigation">
@@ -59,7 +59,7 @@
             <a class="filter-hotel-link" href="index.html">
               <img src="img/icons/home-page.svg" alt="ссылка на домашнюю страницу" width="13" height="15">
             </a>
-            <a href="#" class="filter-hotel-link">Гостиницы</a>
+            <a class="filter-hotel-link" href="#">Гостиницы</a>
           </div>
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-form">
@@ -153,21 +153,21 @@
             </div>
             <ul class="layout-list">
               <li>
-                <button type="button" class="layout current-layout grid-mode" type="button"
+                <button class="layout current-layout grid-mode" type="button"
                   aria-label="раскладка карточками"></button>
               </li>
               <li>
-                <button type="button" class="layout caption-mode" type="button"
+                <button class="layout caption-mode" type="button"
                   aria-label="раскладка картинка снизу подпись"></button>
               </li>
               <li>
-                <button type="button" class="layout list-mode" type="button" aria-label="раскладка список"></button>
+                <button class="layout list-mode" type="button" aria-label="раскладка список"></button>
               </li>
             </ul>
           </div>
           <ul class="hotels-list">
             <li class="hotel-item">
-              <a href="#" class="hotel-about">
+              <a class="hotel-about" href="#">
                 <img src="img/images/amara-resort-spa.jpg" alt="Amara Resort & Spa" width="300" height="212">
                 <h3 class="hotel-item-h3">Amara Resort & Spa</h3>
               </a>
@@ -181,7 +181,7 @@
               <p class="rank">Рейтинг: <span>8,5</span></p>
             </li>
             <li class="hotel-item">
-              <a href="#" class="hotel-about">
+              <a class="hotel-about" href="#">
                 <img src="img/images/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="300" height="212">
                 <h3 class="hotel-item-h3">Villas at Poco Diablo</h3>
               </a>
@@ -195,7 +195,7 @@
               <p class="rank">Рейтинг: <span>9,2</span></p>
             </li>
             <li class="hotel-item">
-              <a href="#" class="hotel-about">
+              <a class="hotel-about" href="#">
                 <img src="img/images/desert-quailInn.jpg" alt="Desert Quail Inn" width="300" height="212">
                 <h3 class="hotel-item-h3">Desert Quail Inn</h3>
               </a>
@@ -209,7 +209,7 @@
               <p class="rank">Рейтинг: <span>6,9</span></p>
             </li>
             <li class="hotel-item">
-              <a href="#" class="hotel-about">
+              <a class="hotel-about" href="#">
                 <img src="img/images/green-treeInn.jpg" alt="GreenTree Inn" width="300" height="212">
                 <h3 class="hotel-item-h3">GreenTree Inn</h3>
               </a>
@@ -361,7 +361,7 @@
                     <path class="path-minus" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="field field-number" id="number-adult" type="number" name="adult-count" value="2" required>
+                <input class="field field-number" id="number-adult" type="number" name="adult-count"  min="1" max="20" step="1" value="2" required>
                 <button class="button-plus" type="button" aria-label="увеличить количество">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-plus" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
@@ -374,7 +374,7 @@
                 <span class="modal-content-name">Дети:</span>
               </label>
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="подсказка">
+                <button class="tooltip-toggle" type="button" aria-label="подсказка">
                   <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
                   </svg>
@@ -391,7 +391,7 @@
                     <path class="path-minus" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="field field-number" id="number-child" type="number" name="child-count" value="2" required>
+                <input class="field field-number" id="number-child" type="number" name="child-count" min="0" max="20" step="1" value="2" required>
                 <button class="button-plus" type="button" aria-label="увеличить количество">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-plus" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
