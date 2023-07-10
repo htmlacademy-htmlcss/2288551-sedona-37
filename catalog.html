@@ -103,13 +103,13 @@
               <div class="range">
                 <div class="price-wrapper">
                   <label class="price-form">
-                    <input class="price-form-field price-form-one inupt-number" type="number" min="0" max="15000" name="min-price"
-                      value="0" required>
+                    <input class="price-form-field price-form-one inupt-number" type="number" min="0" max="15000"
+                      name="min-price" value="0" required>
                     <span class="price-form-name">от</span>
                   </label>
                   <label class="price-form">
-                    <input class="price-form-field price-form-two inupt-number" type="number" min="0" max="12000" name="max-price"
-                      value="9000" required>
+                    <input class="price-form-field price-form-two inupt-number" type="number" min="0" max="12000"
+                      name="max-price" value="9000" required>
                     <span class="price-form-name">до</span>
                   </label>
                 </div>
@@ -331,8 +331,8 @@
           <span class="visually-hidden">Закрыть</span>
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479
-                    1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982
-                    14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="black" />
+              1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982
+              14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="black" />
           </svg>
         </button>
         <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
@@ -352,16 +352,15 @@
           </span>
           <div class="modal-content-people">
             <div class="modal-content-adult">
-              <label for="number-adult">
-                <span class="modal-content-name">Взрослые:</span>
-              </label>
+              <label for="adult-count" class="modal-content-name">Взрослые:</label>
               <div class="button-number">
                 <button class="button-minus" type="button" aria-label="уменьшить количество">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-minus" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="field field-number inupt-number" id="number-adult" type="number" name="adult-count"  min="1" max="20" step="1" value="2" required>
+                <input class="field field-number inupt-number" type="number" id="adult-count" name="adult-count" min="1"
+                  max="20" value="2" step="1" required>
                 <button class="button-plus" type="button" aria-label="увеличить количество">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-plus" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
@@ -370,9 +369,7 @@
               </div>
             </div>
             <div class="modal-content-child">
-              <label for="number-child">
-                <span class="modal-content-name">Дети:</span>
-              </label>
+              <label for="child-count" class="modal-content-name">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-label="подсказка">
                   <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -391,7 +388,8 @@
                     <path class="path-minus" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input class="field field-number inupt-number" id="number-child" type="number" name="child-count" min="0" max="20" step="1" value="2" required>
+                <input class="field field-number inupt-number" type="number" id="child-count" name="child-count" min="0"
+                  max="20" step="1" value="2" required>
                 <button class="button-plus" type="button" aria-label="увеличить количество">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path-plus" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
