@@ -677,7 +677,7 @@ img {
 
 .tooltip-text::after {
   content: " ";
-  background-image: url('../img/icons/triangle.svg');
+  background-image: url("../img/icons/triangle.svg");
   width: 19px;
   height: 9px;
   position: absolute;
@@ -713,13 +713,13 @@ img {
 /* MODAL END */
 
 /* Chrome, Safari, FireFox for input[type='number'] */
-input[type='number']::-webkit-outer-spin-button,
-input[type='number']::-webkit-inner-spin-button {
+.inupt-number::-webkit-outer-spin-button,
+.inupt-number::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
-input[type='number'] {
+.inupt-number {
   appearance: textfield;
 }
 
